@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Training outputs
+wandb/
+checkpoints/
+runs/
+outputs/
+
+# Editor
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
