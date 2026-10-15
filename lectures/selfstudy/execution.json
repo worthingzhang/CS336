@@ -1,0 +1,177 @@
+{
+  "worktrees": [
+    "/data/zc/cs336-study-a",
+    "/data/zc/cs336-study-b",
+    "/data/zc/cs336-study-c",
+    "/data/zc/cs336-study-d"
+  ],
+  "integration_worktree": "/data/zc/cs336-study-integration",
+  "quota_adjustment": "After user request: new/resumed main sessions low reasoning, new subagents default low, at most two workers concurrently; cached research reused",
+  "lectures": [
+    {
+      "lecture": 3,
+      "worker": "a",
+      "main_session_ids": [
+        "01a13ed2-db32-7492-b8fb-7bbcf2569cf6"
+      ],
+      "subagent_tasks": [
+        "lecture03_research"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 4,
+      "worker": "a",
+      "main_session_ids": [
+        "01a13ee4-3a61-7440-9f31-d5b5bf9939e1"
+      ],
+      "subagent_tasks": [
+        "lecture04_concepts"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 5,
+      "worker": "b",
+      "main_session_ids": [
+        "01a13ed2-db35-7303-aefd-939840d662bc"
+      ],
+      "subagent_tasks": [
+        "lecture05_factcheck"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 6,
+      "worker": "a",
+      "main_session_ids": [
+        "01a13ef6-64c2-7c30-9fc7-4ceab2f0df7f"
+      ],
+      "subagent_tasks": [
+        "lecture6_concept_review"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 7,
+      "worker": "b",
+      "main_session_ids": [
+        "01a13ef3-efcc-74a3-a7da-ed0fbe4e2650"
+      ],
+      "subagent_tasks": [
+        "lecture07_audit"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 8,
+      "worker": "b",
+      "main_session_ids": [
+        "01a13ee5-1866-7661-abda-c3cea219ecf4"
+      ],
+      "subagent_tasks": [
+        "lecture08_audit"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 9,
+      "worker": "c",
+      "main_session_ids": [
+        "01a13ed2-db3d-71d1-91b8-191847055048"
+      ],
+      "subagent_tasks": [
+        "lecture09_verify"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 10,
+      "worker": "c",
+      "main_session_ids": [
+        "01a13ef3-efe0-7222-afc7-c117934f26ee"
+      ],
+      "subagent_tasks": [
+        "lecture10_audit"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 11,
+      "worker": "c",
+      "main_session_ids": [
+        "01a13ee6-7262-7bf1-8fc5-9c3277e9981a"
+      ],
+      "subagent_tasks": [
+        "lecture11_factcheck"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 12,
+      "worker": "d",
+      "main_session_ids": [
+        "01a13ef3-7ecd-74d1-adfe-c3cfa4099bb4"
+      ],
+      "subagent_tasks": [
+        "lecture12_concept_review"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 13,
+      "worker": "b",
+      "main_session_ids": [
+        "01a13efe-7f61-77f1-b12c-05b677fadb74"
+      ],
+      "subagent_tasks": [
+        "lecture13_risks"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 14,
+      "worker": "b",
+      "main_session_ids": [
+        "01a13f02-b593-72f1-8f47-266d38043cfc"
+      ],
+      "subagent_tasks": [
+        "minhash_check"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 15,
+      "worker": "d",
+      "main_session_ids": [
+        "01a13ed2-db34-76a3-82b7-3ee2cbbd1010"
+      ],
+      "subagent_tasks": [
+        "lecture15_research"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 16,
+      "worker": "d",
+      "main_session_ids": [
+        "01a13ee4-9fd7-7813-ae60-cf1b4f8821a1"
+      ],
+      "subagent_tasks": [
+        "lecture16_review"
+      ],
+      "status": "done"
+    },
+    {
+      "lecture": 17,
+      "worker": "a",
+      "main_session_ids": [
+        "01a13eff-edcc-7663-98ac-f32b1e35fec4"
+      ],
+      "subagent_tasks": [
+        "concept_review"
+      ],
+      "status": "done"
+    }
+  ]
+}

@@ -1,0 +1,550 @@
+{
+  "lecture": 15,
+  "original_sha256": "42a4bc02408a96e0b414f789f32780ae1d8461000f872d93aa38c94fe369e862",
+  "notes_sha256": "6951a65516bb929ca2ce5816df0423a8e1ecce1789926eaed8abd80ce3bbe45b",
+  "original_pages": 65,
+  "output_pages": 105,
+  "explanation_pages": 40,
+  "original_page_mapping": [
+    {
+      "original": 1,
+      "output": 2
+    },
+    {
+      "original": 2,
+      "output": 3
+    },
+    {
+      "original": 3,
+      "output": 4
+    },
+    {
+      "original": 4,
+      "output": 6
+    },
+    {
+      "original": 5,
+      "output": 7
+    },
+    {
+      "original": 6,
+      "output": 8
+    },
+    {
+      "original": 7,
+      "output": 10
+    },
+    {
+      "original": 8,
+      "output": 11
+    },
+    {
+      "original": 9,
+      "output": 12
+    },
+    {
+      "original": 10,
+      "output": 14
+    },
+    {
+      "original": 11,
+      "output": 16
+    },
+    {
+      "original": 12,
+      "output": 17
+    },
+    {
+      "original": 13,
+      "output": 19
+    },
+    {
+      "original": 14,
+      "output": 20
+    },
+    {
+      "original": 15,
+      "output": 21
+    },
+    {
+      "original": 16,
+      "output": 23
+    },
+    {
+      "original": 17,
+      "output": 24
+    },
+    {
+      "original": 18,
+      "output": 25
+    },
+    {
+      "original": 19,
+      "output": 27
+    },
+    {
+      "original": 20,
+      "output": 28
+    },
+    {
+      "original": 21,
+      "output": 29
+    },
+    {
+      "original": 22,
+      "output": 31
+    },
+    {
+      "original": 23,
+      "output": 32
+    },
+    {
+      "original": 24,
+      "output": 34
+    },
+    {
+      "original": 25,
+      "output": 35
+    },
+    {
+      "original": 26,
+      "output": 37
+    },
+    {
+      "original": 27,
+      "output": 38
+    },
+    {
+      "original": 28,
+      "output": 40
+    },
+    {
+      "original": 29,
+      "output": 42
+    },
+    {
+      "original": 30,
+      "output": 43
+    },
+    {
+      "original": 31,
+      "output": 45
+    },
+    {
+      "original": 32,
+      "output": 46
+    },
+    {
+      "original": 33,
+      "output": 47
+    },
+    {
+      "original": 34,
+      "output": 49
+    },
+    {
+      "original": 35,
+      "output": 50
+    },
+    {
+      "original": 36,
+      "output": 51
+    },
+    {
+      "original": 37,
+      "output": 53
+    },
+    {
+      "original": 38,
+      "output": 54
+    },
+    {
+      "original": 39,
+      "output": 56
+    },
+    {
+      "original": 40,
+      "output": 57
+    },
+    {
+      "original": 41,
+      "output": 59
+    },
+    {
+      "original": 42,
+      "output": 60
+    },
+    {
+      "original": 43,
+      "output": 62
+    },
+    {
+      "original": 44,
+      "output": 63
+    },
+    {
+      "original": 45,
+      "output": 65
+    },
+    {
+      "original": 46,
+      "output": 66
+    },
+    {
+      "original": 47,
+      "output": 68
+    },
+    {
+      "original": 48,
+      "output": 70
+    },
+    {
+      "original": 49,
+      "output": 72
+    },
+    {
+      "original": 50,
+      "output": 73
+    },
+    {
+      "original": 51,
+      "output": 75
+    },
+    {
+      "original": 52,
+      "output": 76
+    },
+    {
+      "original": 53,
+      "output": 78
+    },
+    {
+      "original": 54,
+      "output": 80
+    },
+    {
+      "original": 55,
+      "output": 81
+    },
+    {
+      "original": 56,
+      "output": 83
+    },
+    {
+      "original": 57,
+      "output": 85
+    },
+    {
+      "original": 58,
+      "output": 87
+    },
+    {
+      "original": 59,
+      "output": 89
+    },
+    {
+      "original": 60,
+      "output": 91
+    },
+    {
+      "original": 61,
+      "output": 93
+    },
+    {
+      "original": 62,
+      "output": 95
+    },
+    {
+      "original": 63,
+      "output": 96
+    },
+    {
+      "original": 64,
+      "output": 98
+    },
+    {
+      "original": 65,
+      "output": 100
+    }
+  ],
+  "explanation_page_mapping": [
+    {
+      "original_pages": [
+        1,
+        2,
+        3
+      ],
+      "output_start": 5,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        4,
+        5,
+        6
+      ],
+      "output_start": 9,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        7,
+        8,
+        9
+      ],
+      "output_start": 13,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        10
+      ],
+      "output_start": 15,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        11,
+        12
+      ],
+      "output_start": 18,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        13,
+        14,
+        15
+      ],
+      "output_start": 22,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        16,
+        17,
+        18
+      ],
+      "output_start": 26,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        19,
+        20,
+        21
+      ],
+      "output_start": 30,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        22,
+        23
+      ],
+      "output_start": 33,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        24,
+        25
+      ],
+      "output_start": 36,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        26,
+        27
+      ],
+      "output_start": 39,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        28
+      ],
+      "output_start": 41,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        29,
+        30
+      ],
+      "output_start": 44,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        31,
+        32,
+        33
+      ],
+      "output_start": 48,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        34,
+        35,
+        36
+      ],
+      "output_start": 52,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        37,
+        38
+      ],
+      "output_start": 55,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        39,
+        40
+      ],
+      "output_start": 58,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        41,
+        42
+      ],
+      "output_start": 61,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        43,
+        44
+      ],
+      "output_start": 64,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        45,
+        46
+      ],
+      "output_start": 67,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        47
+      ],
+      "output_start": 69,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        48
+      ],
+      "output_start": 71,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        49,
+        50
+      ],
+      "output_start": 74,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        51,
+        52
+      ],
+      "output_start": 77,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        53
+      ],
+      "output_start": 79,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        54,
+        55
+      ],
+      "output_start": 82,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        56
+      ],
+      "output_start": 84,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        57
+      ],
+      "output_start": 86,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        58
+      ],
+      "output_start": 88,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        59
+      ],
+      "output_start": 90,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        60
+      ],
+      "output_start": 92,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        61
+      ],
+      "output_start": 94,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        62,
+        63
+      ],
+      "output_start": 97,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        64
+      ],
+      "output_start": 99,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        65
+      ],
+      "output_start": 101,
+      "output_count": 1
+    }
+  ],
+  "render_check_scale": 0.5,
+  "validation": "PASS: original bytes, page geometry, content streams, extracted text, rendered pixels, explanation text",
+  "renderer": "PyMuPDF 1.28.2"
+}

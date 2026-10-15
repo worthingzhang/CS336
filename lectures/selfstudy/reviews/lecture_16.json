@@ -1,0 +1,484 @@
+{
+  "lecture": 16,
+  "worker": "d",
+  "status": "主 Codex 验收完成，待协调者集成复核",
+  "completed_at": "2026-10-15T09:44:41.440355+00:00",
+  "worktree": "/data/zc/cs336-study-d",
+  "files": [
+    {
+      "path": "/data/zc/cs336-study-d/lectures/selfstudy/lecture_16.json",
+      "sha256": "75476c1a05f5eeeeb290695a915a071ff57bbef75d28e79a1e4a2ecfcc26665b",
+      "bytes": 73642
+    },
+    {
+      "path": "/data/zc/cs336-study-d/lectures/lecture_16_annotated.pdf",
+      "sha256": "74a1c18c972c3f8facd7926a2e138948c0e3685c8def7045aea01b1f6a5545b2",
+      "bytes": 9047842
+    },
+    {
+      "path": "/data/zc/cs336-study-d/lectures/selfstudy/lecture_16.build.json",
+      "sha256": "ebdc71ad491ef0cfa5bcf24075a30344ba9a60bffd4567de79ee6b82b379c562",
+      "bytes": 7625
+    }
+  ],
+  "coverage": {
+    "original_pages": 61,
+    "output_pages": 98,
+    "added_pages": 37,
+    "sections": 32,
+    "self_checks": 15,
+    "cjk_characters_in_json": 15459,
+    "page_assignment": "1..61，连续、无遗漏、无重复，每组1–3页",
+    "section_map": [
+      {
+        "pages": [
+          1,
+          2
+        ],
+        "title": "从偏好对齐走向可验证任务"
+      },
+      {
+        "pages": [
+          3,
+          4
+        ],
+        "title": "奖励的可验证性：能自动打分，不等于目标没有漏洞"
+      },
+      {
+        "pages": [
+          5
+        ],
+        "title": "编者推导：从离散答案到策略梯度"
+      },
+      {
+        "pages": [
+          6,
+          7,
+          8
+        ],
+        "title": "PPO：裁剪限制更新动机，工程决定实际行为"
+      },
+      {
+        "pages": [
+          9,
+          10
+        ],
+        "title": "把语言模型放进强化学习回路"
+      },
+      {
+        "pages": [
+          11,
+          12
+        ],
+        "title": "沿 PPO 代码追踪张量和损失"
+      },
+      {
+        "pages": [
+          13,
+          14
+        ],
+        "title": "Rollout、终止位置与 KL 奖励塑形"
+      },
+      {
+        "pages": [
+          15,
+          16
+        ],
+        "title": "优势、GAE 与训练曲线：把终局分数传回前缀"
+      },
+      {
+        "pages": [
+          17,
+          18
+        ],
+        "title": "GRPO：用同题多次尝试替代值网络"
+      },
+      {
+        "pages": [
+          19,
+          20
+        ],
+        "title": "一个可手算的 GRPO batch"
+      },
+      {
+        "pages": [
+          21,
+          22
+        ],
+        "title": "结果监督、过程监督与合法基线"
+      },
+      {
+        "pages": [
+          23
+        ],
+        "title": "编者推导：组内均值、标准差与 Dr. GRPO 的偏差边界"
+      },
+      {
+        "pages": [
+          24
+        ],
+        "title": "长度与难度归一化：被改变的到底是哪一份权重"
+      },
+      {
+        "pages": [
+          25,
+          26
+        ],
+        "title": "案例阅读方法：把算法、数据、算力与评测拆开"
+      },
+      {
+        "pages": [
+          27,
+          28
+        ],
+        "title": "R1-Zero：不先做推理 SFT，直接探索可验证奖励"
+      },
+      {
+        "pages": [
+          29,
+          30
+        ],
+        "title": "长思考与“aha”：现象、机制与证据层级"
+      },
+      {
+        "pages": [
+          31,
+          32
+        ],
+        "title": "完整 R1 的冷启动：先让探索进入可用区域"
+      },
+      {
+        "pages": [
+          33,
+          34
+        ],
+        "title": "少量推理 SFT 与语言一致性奖励"
+      },
+      {
+        "pages": [
+          35,
+          36
+        ],
+        "title": "从推理模型到通用助手：奖励来源重新混合"
+      },
+      {
+        "pages": [
+          37,
+          38
+        ],
+        "title": "蒸馏、PRM 与搜索：成功路线不等于唯一路线"
+      },
+      {
+        "pages": [
+          39,
+          40,
+          41
+        ],
+        "title": "Kimi 的数据筛选：难度与防猜测是两个问题"
+      },
+      {
+        "pages": [
+          42
+        ],
+        "title": "编者推导：Kimi 从 KL 正则目标得到平方代理损失"
+      },
+      {
+        "pages": [
+          43,
+          44
+        ],
+        "title": "Kimi 长度奖励、课程学习与答案验证"
+      },
+      {
+        "pages": [
+          45,
+          46
+        ],
+        "title": "RL 系统：训练与生成交替才是主要成本链"
+      },
+      {
+        "pages": [
+          47,
+          48
+        ],
+        "title": "训练尺度与 expert iteration：有没有必要惩罚失败样本"
+      },
+      {
+        "pages": [
+          49,
+          50,
+          51
+        ],
+        "title": "Qwen3：少量 RL 题目依赖大量先前能力"
+      },
+      {
+        "pages": [
+          52
+        ],
+        "title": "Thinking mode fusion：把思考模式变成可控接口"
+      },
+      {
+        "pages": [
+          53,
+          54
+        ],
+        "title": "推理预算与通用对齐的取舍"
+      },
+      {
+        "pages": [
+          55,
+          56
+        ],
+        "title": "从解答题目到代码智能体：环境成为轨迹的一部分"
+      },
+      {
+        "pages": [
+          57,
+          58
+        ],
+        "title": "专家训练与蒸馏：聚合多种代码能力"
+      },
+      {
+        "pages": [
+          59,
+          60
+        ],
+        "title": "环境生成与奖励投机：有测试仍不代表目标封闭"
+      },
+      {
+        "pages": [
+          61
+        ],
+        "title": "把整讲连成一个可检验的闭环"
+      }
+    ],
+    "priority_topics": [
+      "偏好代理奖励与可验证任务规格、验证器边界",
+      "从序列概率分解推导策略梯度，正负优势与PPO裁剪",
+      "GAE中间步骤及gamma=lambda=1望远镜求和",
+      "组内均值有限G缩放、RLOO修正、标准差与随机长度加权",
+      "探索概率、采样温度/截断/熵、长度预算与奖励投机",
+      "R1完整数据链，Kimi解析最优分布与平方代理损失",
+      "Qwen3思考预算/模式融合、代码agent环境生成与reward hacking"
+    ]
+  },
+  "sources_used": [
+    {
+      "id": "slides",
+      "url": "https://raw.githubusercontent.com/stanford-cs336/lectures/main/lecture_16.pdf",
+      "fetched_url": "https://raw.githubusercontent.com/stanford-cs336/lectures/main/lecture_16.pdf",
+      "status": 200,
+      "bytes": 6755659,
+      "sha256": "1a2bea825499f226b1c3fe990606253ad1b4fdbdf2ae90b4d12d7d0c07f2c8b3"
+    },
+    {
+      "id": "captions",
+      "url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/016/captions.source.srt",
+      "fetched_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/016/captions.source.srt",
+      "status": 200,
+      "bytes": 131295,
+      "sha256": "0bba76eec08ea89429137d2cfdfc1b9d8cf95db1e3b63f51837ba9f38780f2c6"
+    },
+    {
+      "id": "ppo",
+      "url": "https://spinningup.openai.com/en/latest/algorithms/ppo.html",
+      "fetched_url": "https://spinningup.openai.com/en/latest/algorithms/ppo.html",
+      "status": 200,
+      "bytes": 44089,
+      "sha256": "b60b15fe9663f95a217a6b6bf9c1389984a1d8520e13bd0690d0f104dd93e97e"
+    },
+    {
+      "id": "alpaca",
+      "url": "https://github.com/tatsu-lab/alpaca_farm/blob/30717ddae735365de756ee2085191b491a71788d/src/alpaca_farm/rl/ppo_trainer.py",
+      "fetched_url": "https://raw.githubusercontent.com/tatsu-lab/alpaca_farm/30717ddae735365de756ee2085191b491a71788d/src/alpaca_farm/rl/ppo_trainer.py",
+      "status": 200,
+      "bytes": 22890,
+      "sha256": "fdc7f8f84e02573bec5e9bc173ada885d5d243ec3d00e3d33c2f8edabfa9a409"
+    },
+    {
+      "id": "nano",
+      "url": "https://github.com/McGill-NLP/nano-aha-moment",
+      "fetched_url": "https://github.com/McGill-NLP/nano-aha-moment",
+      "status": 200,
+      "bytes": 299483,
+      "sha256": "33f18ddaa8653ea24ba0ae241f8287066d76fedcf8da30d5f8361fc198a6e03c"
+    },
+    {
+      "id": "math",
+      "url": "https://arxiv.org/html/2402.03300v3",
+      "fetched_url": "https://arxiv.org/html/2402.03300v3",
+      "status": 200,
+      "bytes": 464869,
+      "sha256": "dfcd357c9f12643480ea44356c4206965a4cc8fd7128d5739f4e4d37937afc04"
+    },
+    {
+      "id": "dr",
+      "url": "https://arxiv.org/html/2503.20783v2",
+      "fetched_url": "https://arxiv.org/html/2503.20783v2",
+      "status": 200,
+      "bytes": 363477,
+      "sha256": "d4bee3136af029eee2477d915fb39e6b320c087f257f6173e4883e8bda6384c4"
+    },
+    {
+      "id": "r1",
+      "url": "https://arxiv.org/html/2501.12948v1",
+      "fetched_url": "https://arxiv.org/html/2501.12948v1",
+      "status": 200,
+      "bytes": 225089,
+      "sha256": "c46e1593f0d86b67906f3514f73eb92b6726c194e8ae65044d07a1ce26d86217"
+    },
+    {
+      "id": "kimi",
+      "url": "https://arxiv.org/html/2501.12599v1",
+      "fetched_url": "https://arxiv.org/html/2501.12599v1",
+      "status": 200,
+      "bytes": 279195,
+      "sha256": "024aa590bf065f2ec92ca025393750f09482168f42ce045dbc8390d907ddbfd4"
+    },
+    {
+      "id": "s1",
+      "url": "https://arxiv.org/abs/2501.19393",
+      "fetched_url": "https://arxiv.org/abs/2501.19393",
+      "status": 200,
+      "bytes": 42886,
+      "sha256": "b9cab37b28af10bf6ef523bead995fa0f5e7c690708511b4d52460ad2af0b2cd"
+    },
+    {
+      "id": "qwen",
+      "url": "https://arxiv.org/html/2505.09388v1",
+      "fetched_url": "https://arxiv.org/html/2505.09388v1",
+      "status": 200,
+      "bytes": 986155,
+      "sha256": "cf5c79d6f4795f74228ebbc7c8be8872bf1fdb03c5a7c856a89cde915691f0d7"
+    },
+    {
+      "id": "coder",
+      "url": "https://arxiv.org/html/2603.00729v1",
+      "fetched_url": "https://arxiv.org/html/2603.00729v1",
+      "status": 200,
+      "bytes": 301538,
+      "sha256": "ec44adc490703cd037344c72584932cd6791d56b68ee699a27167070bf63b88f"
+    }
+  ],
+  "subtitle_ranges": [
+    {
+      "range": "00:30:00–00:31:38",
+      "use": "R1-Zero长度与aha，以及跟进反例"
+    },
+    {
+      "range": "00:38:41–00:39:58",
+      "use": "正负优势与长度归一化，错误回答长度增长"
+    },
+    {
+      "range": "00:42:38–00:43:44",
+      "use": "课堂best-of-8简写，对照Kimi原论文10次估难度/8次无CoT猜测过滤澄清"
+    },
+    {
+      "range": "01:11:16–01:12:44",
+      "use": "预训练/SFT覆盖与初始探索；保留有限预算边界"
+    }
+  ],
+  "subagent_roles_and_findings": [
+    {
+      "agent": "/root/lecture16_review",
+      "role": "资料与概念核对员",
+      "actions": "实际调用spawn_agent，完整阅读工作说明、原页文本与字幕，实际HTTP/web核验六篇原论文；只读未编辑",
+      "findings": [
+        "Kimi10次高温估难度与8次无CoT防猜测过滤不能合并",
+        "R1 600k为全部推理样本，仅部分用V3裁判",
+        "Dr.GRPO组均值存在(G-1)/G缩放，RLOO可修正",
+        "Kimi平方log-ratio正则与均值近似条件",
+        "Qwen3 3995为query-verifier pairs",
+        "代码agent恢复远端仓库造成奖励投机，blocker仅启发式"
+      ]
+    },
+    {
+      "agent": "/root/lecture16_review",
+      "role": "独立成稿审阅员及修改复核",
+      "actions": "两次followup_task：阅读全文32节、核验公式与数字、查看相关原图；随后复核定点修订",
+      "findings": [
+        "发现并修正00:38:41–00:39:58字幕归因",
+        "发现并修正len(PASS_TO_FAIL)=0误读为路径长度",
+        "补全Kimi等长时长度奖励0的已公开定义",
+        "新增探索/熵/采样分布段落复核通过；无剩余实质错误"
+      ],
+      "boundary": "未检查最终PDF排版；PDF构建与视觉验收由主Codex完成"
+    }
+  ],
+  "validation": {
+    "shared_builder": {
+      "command": "/data/zc/cs336-study-control-20261015/venv/bin/python /data/zc/cs336-study-integration/lectures/selfstudy/build_pdf.py --root \"$PWD\" --lecture 16",
+      "result": "PASS: original bytes, page geometry, content streams, extracted text, rendered pixels, explanation text",
+      "original_sha256": "1a2bea825499f226b1c3fe990606253ad1b4fdbdf2ae90b4d12d7d0c07f2c8b3",
+      "notes_sha256": "75476c1a05f5eeeeb290695a915a071ff57bbef75d28e79a1e4a2ecfcc26665b",
+      "pages": 98,
+      "render_check_scale": 0.5,
+      "renderer": "PyMuPDF 1.28.2",
+      "custom_wrapper": false
+    },
+    "official_source": "实际HTTP下载官方main/lecture_16.pdf，与本地及git HEAD逐字节相同",
+    "python_static_validator": {
+      "command": "python3 /data/zc/cs336-study-integration/lectures/selfstudy/validate_python.py --root \"$PWD\" --lecture 16",
+      "attempted": true,
+      "result": "不适用，实际命令退出1：基线不存在lectures/lecture_16.py；本讲只有PDF原稿，未伪造Python PASS"
+    },
+    "cpu_numeric_checks": {
+      "gradient_enumeration": {
+        "true": 0.1875,
+        "group_mean": 0.140625,
+        "leave_one_out": 0.1875
+      },
+      "kl": 0.19274475702175753,
+      "clamped_kl": 0.37600290339658854,
+      "mixed_group": 0.3438,
+      "at_least_one_rare": 0.06202503617415456,
+      "at_least_one_common": 0.9988209815422261,
+      "ten_failures": 0.10737418240000006,
+      "slot_efficiency": 0.325,
+      "gae": [
+        0.8,
+        0.6,
+        0.4
+      ]
+    },
+    "visual_review": {
+      "original_pages": "主Codex渲染并浏览全部61页原稿的16张联系表，代码和公式另对照原作者源文件/论文",
+      "annotated_output_pages": [
+        1,
+        2,
+        9,
+        31,
+        36,
+        38,
+        65,
+        68,
+        83,
+        92,
+        94,
+        96,
+        98
+      ],
+      "result": "人工抽查中文、公式、图表讲解、分页及末尾；未发现遮挡或溢出。最后缩短封面标题避免单字孤行并重新查看最终第1页。",
+      "all_note_pages": "37页文本无NUL/U+FFFD缺字标记，无文本块越出页面；共享构建器已逐段验证中文文本完整提取"
+    },
+    "resolved_build_issue": "首次构建发现上标零0.8¹⁰缺字，改用可读ASCII 0.8^10后共享构建成功；未改共享构建器",
+    "diff_check": "git diff --check PASS；新增JSON解析、末尾换行与无行末空白PASS",
+    "scope_preservation": {
+      "lecture15_hashes_unchanged": {
+        "/data/zc/cs336-study-d/lectures/lecture_15.pdf": "42a4bc02408a96e0b414f789f32780ae1d8461000f872d93aa38c94fe369e862",
+        "/data/zc/cs336-study-d/lectures/lecture_15_annotated.pdf": "2bc027f6c1e7c28e896fa423977e3e0cbe983f755566458479c8d08fcb1134dc",
+        "/data/zc/cs336-study-d/lectures/selfstudy/lecture_15.build.json": "be2d7ff1d8b9198ec0b87e61a6f1daefde8caaaef17c1af93f87eba4ddb98d48",
+        "/data/zc/cs336-study-d/lectures/selfstudy/lecture_15.json": "6951a65516bb929ca2ce5816df0423a8e1ecce1789926eaed8abd80ce3bbe45b"
+      },
+      "tracked_changes": "git diff为空，仅新增第16讲PDF/JSON/构建报告；其他预存未提交文件未改",
+      "no_commit_push_or_pr": true
+    }
+  },
+  "limitations": [
+    "没有重新训练模型或复现论文基准分数；未运行GPU或多进程benchmark",
+    "字幕为第三方保存材料，非教师审校稿；没有把字幕当原论文精确技术定义",
+    "部分训练数据与配方未完整公开，讲解保留相关不确定性",
+    "原页保留了课件的历史成绩与简写；中文部分已区分条件、案例观察及编者推导",
+    "协调者仍需进行独立整合验收和最终通读；本工作区未提交git commit"
+  ]
+}

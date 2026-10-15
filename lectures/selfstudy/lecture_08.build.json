@@ -1,0 +1,614 @@
+{
+  "lecture": 8,
+  "original_sha256": "4c4d7674b333693f20f328935d84dd8a073362c9725c5e05302b6650751ad4d1",
+  "notes_sha256": "3b55d8456077974029907733714da8ea0a7132267e9b47e42d698ad28e616f52",
+  "original_pages": 73,
+  "output_pages": 116,
+  "explanation_pages": 43,
+  "original_page_mapping": [
+    {
+      "original": 1,
+      "output": 2
+    },
+    {
+      "original": 2,
+      "output": 3
+    },
+    {
+      "original": 3,
+      "output": 4
+    },
+    {
+      "original": 4,
+      "output": 6
+    },
+    {
+      "original": 5,
+      "output": 7
+    },
+    {
+      "original": 6,
+      "output": 8
+    },
+    {
+      "original": 7,
+      "output": 10
+    },
+    {
+      "original": 8,
+      "output": 12
+    },
+    {
+      "original": 9,
+      "output": 14
+    },
+    {
+      "original": 10,
+      "output": 15
+    },
+    {
+      "original": 11,
+      "output": 17
+    },
+    {
+      "original": 12,
+      "output": 18
+    },
+    {
+      "original": 13,
+      "output": 20
+    },
+    {
+      "original": 14,
+      "output": 21
+    },
+    {
+      "original": 15,
+      "output": 23
+    },
+    {
+      "original": 16,
+      "output": 24
+    },
+    {
+      "original": 17,
+      "output": 26
+    },
+    {
+      "original": 18,
+      "output": 27
+    },
+    {
+      "original": 19,
+      "output": 29
+    },
+    {
+      "original": 20,
+      "output": 30
+    },
+    {
+      "original": 21,
+      "output": 31
+    },
+    {
+      "original": 22,
+      "output": 33
+    },
+    {
+      "original": 23,
+      "output": 34
+    },
+    {
+      "original": 24,
+      "output": 36
+    },
+    {
+      "original": 25,
+      "output": 37
+    },
+    {
+      "original": 26,
+      "output": 38
+    },
+    {
+      "original": 27,
+      "output": 40
+    },
+    {
+      "original": 28,
+      "output": 41
+    },
+    {
+      "original": 29,
+      "output": 43
+    },
+    {
+      "original": 30,
+      "output": 44
+    },
+    {
+      "original": 31,
+      "output": 45
+    },
+    {
+      "original": 32,
+      "output": 47
+    },
+    {
+      "original": 33,
+      "output": 48
+    },
+    {
+      "original": 34,
+      "output": 50
+    },
+    {
+      "original": 35,
+      "output": 52
+    },
+    {
+      "original": 36,
+      "output": 53
+    },
+    {
+      "original": 37,
+      "output": 55
+    },
+    {
+      "original": 38,
+      "output": 56
+    },
+    {
+      "original": 39,
+      "output": 58
+    },
+    {
+      "original": 40,
+      "output": 59
+    },
+    {
+      "original": 41,
+      "output": 61
+    },
+    {
+      "original": 42,
+      "output": 63
+    },
+    {
+      "original": 43,
+      "output": 64
+    },
+    {
+      "original": 44,
+      "output": 66
+    },
+    {
+      "original": 45,
+      "output": 67
+    },
+    {
+      "original": 46,
+      "output": 69
+    },
+    {
+      "original": 47,
+      "output": 70
+    },
+    {
+      "original": 48,
+      "output": 72
+    },
+    {
+      "original": 49,
+      "output": 73
+    },
+    {
+      "original": 50,
+      "output": 75
+    },
+    {
+      "original": 51,
+      "output": 76
+    },
+    {
+      "original": 52,
+      "output": 78
+    },
+    {
+      "original": 53,
+      "output": 79
+    },
+    {
+      "original": 54,
+      "output": 81
+    },
+    {
+      "original": 55,
+      "output": 83
+    },
+    {
+      "original": 56,
+      "output": 85
+    },
+    {
+      "original": 57,
+      "output": 87
+    },
+    {
+      "original": 58,
+      "output": 88
+    },
+    {
+      "original": 59,
+      "output": 90
+    },
+    {
+      "original": 60,
+      "output": 91
+    },
+    {
+      "original": 61,
+      "output": 93
+    },
+    {
+      "original": 62,
+      "output": 94
+    },
+    {
+      "original": 63,
+      "output": 96
+    },
+    {
+      "original": 64,
+      "output": 98
+    },
+    {
+      "original": 65,
+      "output": 99
+    },
+    {
+      "original": 66,
+      "output": 101
+    },
+    {
+      "original": 67,
+      "output": 102
+    },
+    {
+      "original": 68,
+      "output": 104
+    },
+    {
+      "original": 69,
+      "output": 106
+    },
+    {
+      "original": 70,
+      "output": 107
+    },
+    {
+      "original": 71,
+      "output": 109
+    },
+    {
+      "original": 72,
+      "output": 110
+    },
+    {
+      "original": 73,
+      "output": 112
+    }
+  ],
+  "explanation_page_mapping": [
+    {
+      "original_pages": [
+        1,
+        2,
+        3
+      ],
+      "output_start": 5,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        4,
+        5,
+        6
+      ],
+      "output_start": 9,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        7
+      ],
+      "output_start": 11,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        8
+      ],
+      "output_start": 13,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        9,
+        10
+      ],
+      "output_start": 16,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        11,
+        12
+      ],
+      "output_start": 19,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        13,
+        14
+      ],
+      "output_start": 22,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        15,
+        16
+      ],
+      "output_start": 25,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        17,
+        18
+      ],
+      "output_start": 28,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        19,
+        20,
+        21
+      ],
+      "output_start": 32,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        22,
+        23
+      ],
+      "output_start": 35,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        24,
+        25,
+        26
+      ],
+      "output_start": 39,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        27,
+        28
+      ],
+      "output_start": 42,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        29,
+        30,
+        31
+      ],
+      "output_start": 46,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        32,
+        33
+      ],
+      "output_start": 49,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        34
+      ],
+      "output_start": 51,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        35,
+        36
+      ],
+      "output_start": 54,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        37,
+        38
+      ],
+      "output_start": 57,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        39,
+        40
+      ],
+      "output_start": 60,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        41
+      ],
+      "output_start": 62,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        42,
+        43
+      ],
+      "output_start": 65,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        44,
+        45
+      ],
+      "output_start": 68,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        46,
+        47
+      ],
+      "output_start": 71,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        48,
+        49
+      ],
+      "output_start": 74,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        50,
+        51
+      ],
+      "output_start": 77,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        52,
+        53
+      ],
+      "output_start": 80,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        54
+      ],
+      "output_start": 82,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        55
+      ],
+      "output_start": 84,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        56
+      ],
+      "output_start": 86,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        57,
+        58
+      ],
+      "output_start": 89,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        59,
+        60
+      ],
+      "output_start": 92,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        61,
+        62
+      ],
+      "output_start": 95,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        63
+      ],
+      "output_start": 97,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        64,
+        65
+      ],
+      "output_start": 100,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        66,
+        67
+      ],
+      "output_start": 103,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        68
+      ],
+      "output_start": 105,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        69,
+        70
+      ],
+      "output_start": 108,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        71,
+        72
+      ],
+      "output_start": 111,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        73
+      ],
+      "output_start": 113,
+      "output_count": 1
+    }
+  ],
+  "render_check_scale": 0.5,
+  "validation": "PASS: original bytes, page geometry, content streams, extracted text, rendered pixels, explanation text",
+  "renderer": "PyMuPDF 1.28.2"
+}

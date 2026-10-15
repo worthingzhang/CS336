@@ -1,0 +1,504 @@
+{
+  "lecture": 4,
+  "worker": "a",
+  "worktree": "/data/zc/cs336-study-a",
+  "status": "completed_pending_coordinator_integration",
+  "files": [
+    "lectures/lecture_04_annotated.pdf",
+    "lectures/selfstudy/lecture_04.json",
+    "lectures/selfstudy/lecture_04.build.json"
+  ],
+  "coverage": {
+    "original_pages": 60,
+    "sections": 36,
+    "section_map": [
+      {
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "title": "两种成本：长序列交互与系统执行"
+      },
+      {
+        "pages": [
+          4
+        ],
+        "title": "结合律如何消除 n×n 中间矩阵"
+      },
+      {
+        "pages": [
+          5
+        ],
+        "title": "因果状态递推、核特征与归一化"
+      },
+      {
+        "pages": [
+          6
+        ],
+        "title": "MiniMax 的混合架构：收益与复杂度边界"
+      },
+      {
+        "pages": [
+          7
+        ],
+        "title": "从门控记忆到 SSM：离散化与关联扫描"
+      },
+      {
+        "pages": [
+          8
+        ],
+        "title": "Nemotron：把状态模型与注意力交错使用"
+      },
+      {
+        "pages": [
+          9
+        ],
+        "title": "Gated DeltaNet：衰减以后按键方向纠错"
+      },
+      {
+        "pages": [
+          10,
+          11
+        ],
+        "title": "混合比例的实验：表达能力与效率的折中"
+      },
+      {
+        "pages": [
+          12,
+          13
+        ],
+        "title": "DSA：先选历史位置，再做精细注意力"
+      },
+      {
+        "pages": [
+          14,
+          15
+        ],
+        "title": "MoE 的基本单位：每层、每个 token 选专家"
+      },
+      {
+        "pages": [
+          16,
+          17,
+          18
+        ],
+        "title": "MoE 为什么有吸引力：容量、算量和墙钟"
+      },
+      {
+        "pages": [
+          19,
+          20,
+          21
+        ],
+        "title": "专家并行与模型对比表的正确口径"
+      },
+      {
+        "pages": [
+          22,
+          23,
+          24
+        ],
+        "title": "证据与代价：MoE 效果好仍不等于免费"
+      },
+      {
+        "pages": [
+          25,
+          26
+        ],
+        "title": "MoE 设计的三个自由度"
+      },
+      {
+        "pages": [
+          27,
+          28
+        ],
+        "title": "谁选择谁：token choice、expert choice 与受控比较"
+      },
+      {
+        "pages": [
+          29,
+          30
+        ],
+        "title": "路由方法的选择：top-k、哈希、策略与匹配"
+      },
+      {
+        "pages": [
+          31
+        ],
+        "title": "Top-k 路由：选择集合与混合权重是两步"
+      },
+      {
+        "pages": [
+          32,
+          33,
+          34
+        ],
+        "title": "专家粒度与共享专家：组合更多，收益需消融"
+      },
+      {
+        "pages": [
+          35
+        ],
+        "title": "读专家配置表：E、k、共享数量与粒度"
+      },
+      {
+        "pages": [
+          36,
+          37
+        ],
+        "title": "离散路由怎样学习：任务梯度与策略梯度"
+      },
+      {
+        "pages": [
+          38,
+          39
+        ],
+        "title": "随机扰动：探索路由，不能替代均衡"
+      },
+      {
+        "pages": [
+          40
+        ],
+        "title": "负载均衡损失：从统计量到 logits 梯度"
+      },
+      {
+        "pages": [
+          41,
+          42
+        ],
+        "title": "设备均衡与 V3 的在线路由偏置"
+      },
+      {
+        "pages": [
+          43
+        ],
+        "title": "去掉均衡会发生什么：从曲线看到路由塌缩"
+      },
+      {
+        "pages": [
+          44,
+          45
+        ],
+        "title": "专家并行的真实数据流与稀疏矩阵计算"
+      },
+      {
+        "pages": [
+          46
+        ],
+        "title": "LatentMoE：把通信的向量也变窄"
+      },
+      {
+        "pages": [
+          47
+        ],
+        "title": "批次依赖与额外不确定性"
+      },
+      {
+        "pages": [
+          48,
+          49
+        ],
+        "title": "Router 的数值稳定性与 z-loss"
+      },
+      {
+        "pages": [
+          50
+        ],
+        "title": "微调风险：更多参数怎样接收更少数据"
+      },
+      {
+        "pages": [
+          51,
+          52,
+          53
+        ],
+        "title": "Upcycling：从稠密模型复用已学权重"
+      },
+      {
+        "pages": [
+          54
+        ],
+        "title": "DeepSeekMoE V1：把前面的部件组装起来"
+      },
+      {
+        "pages": [
+          55
+        ],
+        "title": "DeepSeek-V2：从专家负载走向通信负载"
+      },
+      {
+        "pages": [
+          56
+        ],
+        "title": "DeepSeek-V3：准确读出 sigmoid 路由与均衡"
+      },
+      {
+        "pages": [
+          57,
+          58
+        ],
+        "title": "MLA：压缩 KV 缓存，以及 RoPE 为什么妨碍吸收"
+      },
+      {
+        "pages": [
+          59
+        ],
+        "title": "MTP：额外预测目标与推测解码的区别"
+      },
+      {
+        "pages": [
+          60
+        ],
+        "title": "把整讲串起来：节省的资源与保留的能力"
+      }
+    ],
+    "output_pages": 101,
+    "added_pages": 41,
+    "self_checks": 17,
+    "chinese_characters": 16023,
+    "all_pages_contiguous_once": true,
+    "max_group_pages": 3,
+    "primary_author": "主 Codex 亲自阅读全文、编辑整讲并验收；subagent 负责独立资料核对与成稿审阅"
+  },
+  "sources_used": [
+    {
+      "id": "slides",
+      "title": "Stanford CS336 Spring 2026 Lecture 4，官方原课件；本地原稿为覆盖基准",
+      "url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_04.pdf",
+      "verification": "主会话 HTTP 200，官方 PDF 与本地逐字节一致"
+    },
+    {
+      "id": "captions",
+      "title": "第 4 讲公开视频字幕，第三方保存，非教师审校逐字稿",
+      "url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/004/captions.source.srt",
+      "verification": "主会话 HTTP 200，与共享字幕缓存逐字节一致"
+    },
+    {
+      "id": "linear",
+      "title": "Katharopoulos et al., Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention，原论文",
+      "url": "https://proceedings.mlr.press/v119/katharopoulos20a.html",
+      "verification": "本会话 subagent 实际打开原论文并核查公式"
+    },
+    {
+      "id": "mamba",
+      "title": "Gu and Dao, Mamba: Linear-Time Sequence Modeling with Selective State Spaces，原论文；零阶保持离散化背景",
+      "url": "https://arxiv.org/html/2312.00752v2",
+      "verification": "本会话 subagent 实际打开原论文并核查公式"
+    },
+    {
+      "id": "mamba2",
+      "title": "Dao and Gu, Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality，原论文，SSM 与扫描背景",
+      "url": "https://arxiv.org/html/2405.21060v1",
+      "verification": "本会话 subagent 实际打开原论文并核查公式"
+    },
+    {
+      "id": "gdn",
+      "title": "Yang et al., Gated Delta Networks: Improving Mamba2 with Delta Rule，原论文",
+      "url": "https://arxiv.org/html/2412.06464v3",
+      "verification": "本会话 subagent 实际打开原论文并核查公式"
+    },
+    {
+      "id": "switch",
+      "title": "Fedus et al., Switch Transformers，原论文，top-1 与负载均衡",
+      "url": "https://jmlr.org/papers/v23/21-0998.html",
+      "verification": "本会话 subagent 实际打开原论文并核查公式"
+    },
+    {
+      "id": "deepseek-moe",
+      "title": "Dai et al., DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models，原论文",
+      "url": "https://arxiv.org/abs/2401.06066",
+      "verification": "主会话 web 实际打开原论文/技术报告；课件图表为教学覆盖依据"
+    },
+    {
+      "id": "deepseek2",
+      "title": "DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model，原技术报告",
+      "url": "https://arxiv.org/abs/2405.04434",
+      "verification": "主会话 web 实际打开原论文/技术报告；课件图表为教学覆盖依据"
+    },
+    {
+      "id": "deepseek3",
+      "title": "DeepSeek-V3 Technical Report，原技术报告；用于路由、专家数和 MTP 勘误",
+      "url": "https://arxiv.org/html/2412.19437v2",
+      "verification": "主会话 web 实际打开原论文/技术报告；课件图表为教学覆盖依据"
+    },
+    {
+      "id": "olmoe",
+      "title": "OLMoE: Open Mixture-of-Experts Language Models，原论文；课件所示消融的来源",
+      "url": "https://arxiv.org/html/2409.02060v2",
+      "verification": "主会话 web 实际打开原论文/技术报告；课件图表为教学覆盖依据"
+    },
+    {
+      "id": "stmoe",
+      "title": "Zoph et al., ST-MoE: Designing Stable and Transferable Sparse Expert Models，原论文",
+      "url": "https://arxiv.org/abs/2202.08906",
+      "verification": "主会话 web 实际打开原论文/技术报告；课件图表为教学覆盖依据"
+    },
+    {
+      "id": "megablocks",
+      "title": "Gale et al., MegaBlocks: Efficient Sparse Training with Mixture-of-Experts，原论文",
+      "url": "https://arxiv.org/abs/2211.15841",
+      "verification": "主会话 web 实际打开原论文/技术报告；课件图表为教学覆盖依据"
+    },
+    {
+      "id": "upcycling",
+      "title": "Komatsuzaki et al., Sparse Upcycling: Training Mixture-of-Experts from Dense Checkpoints，原论文",
+      "url": "https://arxiv.org/abs/2212.05055",
+      "verification": "主会话 web 实际打开原论文/技术报告；课件图表为教学覆盖依据"
+    },
+    {
+      "id": "nemotron",
+      "title": "NVIDIA Nemotron 3: Efficient and Open Intelligence，官方白皮书；LatentMoE",
+      "url": "https://arxiv.org/abs/2512.20856",
+      "verification": "主会话 web 实际打开原论文/技术报告；课件图表为教学覆盖依据"
+    },
+    {
+      "id": "dsa",
+      "title": "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models，原技术报告；DSA",
+      "url": "https://arxiv.org/abs/2512.02556",
+      "verification": "主会话 web 实际打开原论文/技术报告；课件图表为教学覆盖依据"
+    }
+  ],
+  "subtitle_ranges": [
+    {
+      "range": "00:08:04–00:09:34",
+      "topic": "线性注意力递推与训练/推理形式",
+      "use": "中文课堂转述标注；mask/分母推导明确是编者补充"
+    },
+    {
+      "range": "00:11:39–00:13:23",
+      "topic": "Mamba-2 输入相关门控及并行/递推",
+      "use": "中文课堂转述标注；连续离散化、Euler 与scan证明明确是编者补充"
+    },
+    {
+      "range": "00:16:06–00:17:40",
+      "topic": "GDN 门与方向擦除",
+      "use": "资料核对，非逐字引语"
+    },
+    {
+      "range": "00:26:48–00:28:35",
+      "topic": "DSA 索引器复杂度",
+      "use": "资料核对"
+    },
+    {
+      "range": "00:35:46–00:36:50",
+      "topic": "总参数与激活计算",
+      "use": "资料核对"
+    },
+    {
+      "range": "01:04:32–01:07:44",
+      "topic": "均衡梯度及bias",
+      "use": "资料核对，不照搬字幕梯度符号简写"
+    }
+  ],
+  "subagent_roles_and_findings": [
+    {
+      "agent": "/root/lecture04_concepts",
+      "phase": "资料/概念核对员",
+      "findings": [
+        "因果mask与双向矩阵式需区分",
+        "核归一化需分母状态和非负/非零条件",
+        "SSM离散化及scan放在原页7作编者补充",
+        "GDN单位键与β=0仍遗忘",
+        "V3 sigmoid归一化、bias只选路、256 routed、MTP额外一步",
+        "均衡梯度正号与softmax链式法则"
+      ],
+      "actions": "主Codex落实至整讲"
+    },
+    {
+      "agent": "/root/lecture04_concepts",
+      "phase": "成稿审阅员",
+      "findings": [
+        "原页11左图Accuracy/RULER recall，不是损失",
+        "原页13 GLM表无MTP，warmup-only与full DSA需准确区分",
+        "建议添加Mamba原论文及GDN L2实现条件"
+      ],
+      "actions": "两处图表误述均修正；建议均采纳；subagent定向复核最终内容验收通过",
+      "independent_cpu_checks": "结合律、归一化、ZOH、scan、GDN、MoE参数/路由、组合数、均衡有限差分、容量、通信、z-loss全部通过",
+      "scope": "内容审阅，不替代主Codex PDF版面验收"
+    }
+  ],
+  "validation": {
+    "build_command": "/data/zc/cs336-study-control-20261015/venv/bin/python /data/zc/cs336-study-integration/lectures/selfstudy/build_pdf.py --root \"$PWD\" --lecture 4",
+    "build_result": "PASS: original bytes, page geometry, content streams, extracted text, rendered pixels, explanation text",
+    "original_sha256": "922da01cee70ed9dc9eef13d8116f1d6f45d663c12e632b3e80954c783bd3ce5",
+    "notes_sha256": "7e1b44d950eae7c895312773c7ece84e25b2e5c098bef1ccf16000759c655186",
+    "all_60_original_pages": "原文件字节、每页几何、提取文本、content streams以及0.5倍渲染像素一致",
+    "note_text": "所有讲解、自测题干/答案及参考文献完整性检查通过",
+    "cpu_examples": {
+      "matrix_associativity": "PASS",
+      "softmax_not_identity": "PASS",
+      "normalized_linear_state": "PASS",
+      "zoh_ssm": "PASS",
+      "scan_order": "PASS",
+      "scan_associative": "PASS",
+      "gdn_1": "PASS",
+      "gdn_0.5": "PASS",
+      "moe_parameters": "PASS",
+      "gate_normalization": "PASS",
+      "sigmoid_normalize_not_softmax": "PASS",
+      "expert_combinations": "PASS",
+      "balance_loss": "PASS",
+      "balance_logits_gradient": "PASS",
+      "balance_finite_difference_0": "PASS",
+      "balance_finite_difference_1": "PASS",
+      "capacity_padding": "PASS",
+      "communication": "PASS",
+      "z_loss": "PASS",
+      "mla_cache": "PASS",
+      "mla_projection_absorption": "PASS",
+      "coverage": "PASS",
+      "max_group_three": "PASS",
+      "existing_files_unchanged": "PASS"
+    },
+    "layout": {
+      "out_of_page_spans": [],
+      "rendered_pages": [
+        1,
+        7,
+        9,
+        13,
+        17,
+        20,
+        23,
+        49,
+        63,
+        73,
+        90,
+        93,
+        97,
+        98,
+        99,
+        100,
+        101
+      ],
+      "output_pages": 101
+    },
+    "visual_inspection": "主Codex查看全部60原页的6页联系表，放大原页11/13；跨构建抽查开头、公式、图表说明、V3、MLA、自测和末页；最终精简原页7讲解避免单独续页，并再次查看最终对应PDF第13页及末页，中文/公式可读，未见溢出",
+    "git_diff_check": "PASS",
+    "existing_files_unchanged": {
+      "lectures/selfstudy/BUILD_FIX.txt": "7fb8b5ff601f78b1a9b90bd6cc1a08e93c5ebe9b958d1d8d4685072c1e961e80",
+      "lectures/selfstudy/lecture_03.json": "a5ada337d86467502f6ff4c3638799e8437864902bf634ba12c196bdc2ad104a",
+      "lectures/selfstudy/lecture_03.build.json": "086a1434e88856f385b2db2cc06d7fd8d1deb8ba126c21b46d12d691048b26cf",
+      "lectures/lecture_03_annotated.pdf": "d22abd69872febacb1ccd392046dd74885c0ed7e8eed39b7c96966dc0608a60f",
+      "lectures/lecture_04.pdf": "922da01cee70ed9dc9eef13d8116f1d6f45d663c12e632b3e80954c783bd3ce5"
+    },
+    "python_validator": {
+      "command": "python3 /data/zc/cs336-study-integration/lectures/selfstudy/validate_python.py --root \"$PWD\" --lecture 4",
+      "result": "NOT APPLICABLE (attempted; exit 1)",
+      "reason": "本讲原稿只有lecture_04.pdf，无lecture_04.py；git show基线不存在该Python路径，因此未做AST/token验证，不虚称通过。"
+    },
+    "deliverable_sha256": {
+      "lectures/lecture_04_annotated.pdf": "b4ebd5b47d0e611088368eb906ddbbf8164322c63d308058a34828150f592974",
+      "lectures/selfstudy/lecture_04.json": "7e1b44d950eae7c895312773c7ece84e25b2e5c098bef1ccf16000759c655186",
+      "lectures/selfstudy/lecture_04.build.json": "8a0452ea1da940134180fe4bea64178d6752fe5d7d1384b1b49e3de1e4cbaabc"
+    }
+  },
+  "limitations": [
+    "未运行GPU训练或整讲benchmark；数值例子为CPU小规模验算。",
+    "未运行edtrace页面，本讲是PDF增强。",
+    "逐页像素一致检验使用构建器0.5倍缩放；人工检查为全部原页联系表加重点放大和增强页代表抽查，并非对全部增强页逐像素人工检查。",
+    "参考资料用于概念核对与勘误，模型结果按课件实验时点解读，不作实时排行榜或通用速度承诺。",
+    "协调者仍需独立复核并集成；没有git commit、推送或PR。"
+  ]
+}

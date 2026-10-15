@@ -1,0 +1,740 @@
+{
+  "lecture": 3,
+  "worker": "a",
+  "status": "done",
+  "completed_at": "2026-10-15T09:27:31.650459+00:00",
+  "files": [
+    {
+      "path": "/data/zc/cs336-study-a/lectures/lecture_03_annotated.pdf",
+      "bytes": 8551557,
+      "sha256": "d22abd69872febacb1ccd392046dd74885c0ed7e8eed39b7c96966dc0608a60f"
+    },
+    {
+      "path": "/data/zc/cs336-study-a/lectures/selfstudy/lecture_03.json",
+      "bytes": 74521,
+      "sha256": "a5ada337d86467502f6ff4c3638799e8437864902bf634ba12c196bdc2ad104a"
+    },
+    {
+      "path": "/data/zc/cs336-study-a/lectures/selfstudy/lecture_03.build.json",
+      "bytes": 8316,
+      "sha256": "086a1434e88856f385b2db2cc06d7fd8d1deb8ba126c21b46d12d691048b26cf"
+    }
+  ],
+  "coverage": {
+    "original_pages": 67,
+    "output_pages": 107,
+    "added_pages": 40,
+    "sections": 35,
+    "blocks": 108,
+    "block_text_characters_including_formulas": 19722,
+    "self_checks_with_answers": 13,
+    "references": 19,
+    "page_coverage": "连续且恰好覆盖1..67，无遗漏无重复；每组1–3原页",
+    "groups": [
+      {
+        "pages": [
+          1,
+          2
+        ],
+        "title": "如何使用这一讲：架构选择是带约束的实验",
+        "block_count": 2
+      },
+      {
+        "pages": [
+          3,
+          4
+        ],
+        "title": "从原始 Transformer 到现代语言模型",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          5,
+          6,
+          7
+        ],
+        "title": "怎样读模型架构调查表",
+        "block_count": 2
+      },
+      {
+        "pages": [
+          8,
+          9
+        ],
+        "title": "建立覆盖清单：从结构到训练，再到部署",
+        "block_count": 2
+      },
+      {
+        "pages": [
+          10
+        ],
+        "title": "Pre-Norm 与 Post-Norm：归一化放在哪里",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          11,
+          12
+        ],
+        "title": "从训练曲线理解 Pre-Norm 的证据",
+        "block_count": 4
+      },
+      {
+        "pages": [
+          13
+        ],
+        "title": "双归一化与分支输出归一化",
+        "block_count": 2
+      },
+      {
+        "pages": [
+          14
+        ],
+        "title": "LayerNorm 与 RMSNorm 的精确定义",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          15,
+          16,
+          17
+        ],
+        "title": "为什么减少一点归一化计算仍可能变快",
+        "block_count": 4
+      },
+      {
+        "pages": [
+          18,
+          19
+        ],
+        "title": "去掉 bias 与归一化小结",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          20,
+          21
+        ],
+        "title": "激活函数：FFN 为什么需要非线性",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          22,
+          23
+        ],
+        "title": "门控 FFN：SwiGLU 与 GeGLU",
+        "block_count": 4
+      },
+      {
+        "pages": [
+          24,
+          25,
+          26
+        ],
+        "title": "门控激活的实验支持与边界",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          27,
+          28,
+          29
+        ],
+        "title": "串行与并行残差块",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          30
+        ],
+        "title": "位置编码的四种入口",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          31,
+          32
+        ],
+        "title": "RoPE 的目标：让点积显式依赖相对位移",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          33,
+          34
+        ],
+        "title": "多频率 RoPE 的矩阵与实现",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          35
+        ],
+        "title": "把 RoPE 放进注意力代码的正确位置",
+        "block_count": 4
+      },
+      {
+        "pages": [
+          36,
+          37,
+          38
+        ],
+        "title": "FFN 宽度：4d 与 8d/3 从哪里来",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          39,
+          40,
+          41
+        ],
+        "title": "FFN 比例的经验盆地与 T5 例外",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          42,
+          43
+        ],
+        "title": "头数乘头维度是否必须等于模型宽度",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          44,
+          45,
+          46
+        ],
+        "title": "深度与宽度：参数相近，延迟未必相近",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          47
+        ],
+        "title": "词表大小连接 tokenization 与模型成本",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          48,
+          49
+        ],
+        "title": "预训练还需要正则化吗",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          50,
+          51
+        ],
+        "title": "Weight decay 与学习率计划相互作用",
+        "block_count": 4
+      },
+      {
+        "pages": [
+          52,
+          53
+        ],
+        "title": "训练尖峰与 softmax：数值问题和优化问题",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          54
+        ],
+        "title": "输出 z-loss：约束 logit 的共同平移方向",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          55,
+          56
+        ],
+        "title": "QK-Norm 与 logit soft-capping",
+        "block_count": 4
+      },
+      {
+        "pages": [
+          57,
+          58
+        ],
+        "title": "注意力成本：先分析整段训练或 prefill",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          59,
+          60
+        ],
+        "title": "KV cache 与逐 token 解码的成本",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          61
+        ],
+        "title": "MQA：保留多组查询，共享一组 K/V",
+        "block_count": 4
+      },
+      {
+        "pages": [
+          62,
+          63
+        ],
+        "title": "GQA：在 MHA 与 MQA 之间选择 KV 头数",
+        "block_count": 4
+      },
+      {
+        "pages": [
+          64
+        ],
+        "title": "稀疏与滑动窗口注意力：减少可见连接",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          65,
+          66
+        ],
+        "title": "交错全局与局部层：让远程信息定期流通",
+        "block_count": 3
+      },
+      {
+        "pages": [
+          67
+        ],
+        "title": "把架构选择连成一次完整判断",
+        "block_count": 2
+      }
+    ]
+  },
+  "sources_used": [
+    {
+      "id": "slides",
+      "title": "CS336 Spring 2026 第3讲原课件（教学主源，保留67页）",
+      "url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_03.pdf",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "course",
+      "title": "Stanford CS336 Spring 2026 官方课程与讲次安排",
+      "url": "https://cs336.stanford.edu/",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "captions",
+      "title": "第3讲公开录像的第三方字幕缓存（非教师审校稿，仅作课堂定位）",
+      "url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/003/captions.source.srt",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "transformer",
+      "title": "Vaswani et al., Attention Is All You Need（原论文，架构与缩放注意力）",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "prenorm",
+      "title": "Xiong et al., On Layer Normalization in the Transformer Architecture（原论文，初始化梯度与预热）",
+      "url": "https://arxiv.org/abs/2002.04745",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "rmsnorm",
+      "title": "Zhang and Sennrich, Root Mean Square Layer Normalization（原论文，RMS定义）",
+      "url": "https://arxiv.org/abs/1910.07467",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "glu",
+      "title": "Shazeer, GLU Variants Improve Transformer（原论文，门控与参数匹配）",
+      "url": "https://arxiv.org/abs/2002.05202",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "rope",
+      "title": "Su et al., RoFormer: Enhanced Transformer with Rotary Position Embedding（原论文，旋转位置编码）",
+      "url": "https://arxiv.org/abs/2104.09864",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "t5",
+      "title": "Raffel et al., Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer（原论文，T5）",
+      "url": "https://arxiv.org/abs/1910.10683",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "scaling",
+      "title": "Kaplan et al., Scaling Laws for Neural Language Models（原论文，形状扫描的实验背景）",
+      "url": "https://arxiv.org/abs/2001.08361",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "palm",
+      "title": "Chowdhery et al., PaLM: Scaling Language Modeling with Pathways（原技术报告，并行块与z-loss）",
+      "url": "https://arxiv.org/abs/2204.02311",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "weight_decay",
+      "title": "D’Angelo et al., Why Do We Need Weight Decay in Modern Deep Learning?（原论文，2023预印本/2024修订）",
+      "url": "https://arxiv.org/abs/2310.04415",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "gemma2",
+      "title": "Gemma Team, Gemma 2: Improving Open Language Models at a Practical Size（原技术报告，分支归一化与soft-capping）",
+      "url": "https://arxiv.org/abs/2408.00118",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "mqa",
+      "title": "Shazeer, Fast Transformer Decoding: One Write-Head is All You Need（原论文，MQA与解码成本）",
+      "url": "https://arxiv.org/abs/1911.02150",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "gqa",
+      "title": "Ainslie et al., GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints（原论文）",
+      "url": "https://arxiv.org/abs/2305.13245",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "sparse",
+      "title": "Child et al., Generating Long Sequences with Sparse Transformers（原论文，稀疏注意力）",
+      "url": "https://arxiv.org/abs/1904.10509",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "command_a",
+      "title": "Cohere, Command A Technical Report（官方报告，第3页架构说明）",
+      "url": "https://cohere.com/research/papers/command-a-technical-report.pdf",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "data_movement",
+      "title": "Ivanov et al., Data Movement Is All You Need: A Case Study on Optimizing Transformers（原论文，FLOPs与运行时间剖析）",
+      "url": "https://arxiv.org/abs/2007.00072",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    },
+    {
+      "id": "narang",
+      "title": "Narang et al., Do Transformer Modifications Transfer Across Implementations and Applications?（原论文，EMNLP 2021消融实验）",
+      "url": "https://aclanthology.org/2021.emnlp-main.465/",
+      "verification": "本会话通过web或HTTP实际打开核验；原稿另用本地PDF逐页文本和渲染核对。字幕为第三方公开录像缓存。"
+    }
+  ],
+  "subtitle_ranges": [
+    {
+      "original_pages": [
+        11,
+        12
+      ],
+      "range": "00:09:42.950–00:10:11.310",
+      "summary": "第三方录像字幕转述：讲者回顾早期 Pre-Norm 研究希望去掉 warmup 的动机，同时明确提到现代 Transformer 训练仍做 warmup。此处支持的是把早期研究动机与今天的训练配方分开，不能写成“用了 Pre-Norm 就不需要预热”。"
+    },
+    {
+      "original_pages": [
+        15,
+        16,
+        17
+      ],
+      "range": "00:15:34.300–00:16:46.530",
+      "summary": "第三方录像字幕转述：讲者强调0.17%的 FLOPs 也可能对应约25%的运行时间，并限定这取决于 workload 与实现；图中白标签表示算术强度，黑标签表示 FLOPs。数据搬运的重要性连接了第2讲的成本分析与本讲的 norm 选择。"
+    },
+    {
+      "original_pages": [
+        22,
+        23
+      ],
+      "range": "00:24:31.390–00:25:40.810",
+      "summary": "第三方录像字幕转述：将门控 FFN 的中间维度缩到原来的2/3，是为了使总参数量保持相当；讲者明确说这不是铁律。对原实验增益的评价是幅度较小但较一致，并提到重复训练与误差条。因此本节把参数匹配推导与经验质量结论分别说明。"
+    },
+    {
+      "original_pages": [
+        35
+      ],
+      "range": "00:37:57.750–00:38:53.960",
+      "summary": "第三方录像字幕转述：RoPE 通过乘正余弦构造旋转，避免加性位置向量产生的交叉项；实际在注意力投影后对 Q/K 应用，而且每次注意力计算都这样处理。这里的相对性指固定内容向量下的位置机制，并不取消上下文内容本身的变化。"
+    },
+    {
+      "original_pages": [
+        50,
+        51
+      ],
+      "range": "01:01:36.230–01:03:13.830",
+      "summary": "第三方录像字幕转述：讲者用单遍语言模型实验说明 weight decay 可能主要改善优化，并强调它与学习率衰减结合时的行为不同于恒定学习率。这个课堂观察有实验设置边界，不应扩大成所有任务中 weight decay 都不会防止过拟合。"
+    },
+    {
+      "original_pages": [
+        61
+      ],
+      "range": "01:19:32.420–01:20:36.750",
+      "summary": "第三方录像字幕转述：多个 query 保持独立，所有头共享 K/V，因而减少缓存搬运并提高算术强度。字幕在约01:20:13先出现“降低算术强度”的说法，随后约01:20:29立即纠正为“提高”；本节按纠正后的结论与公式解释，不把前一句孤立当作证据。"
+    }
+  ],
+  "subagent_roles_and_findings": [
+    {
+      "agent": "/root/lecture03_research",
+      "role": "资料/概念核对员",
+      "actual_collaboration": "spawn_agent 实际调用；继承主会话模型，未另指定。",
+      "findings": [
+        "核验原67页、渲染关键图表；发现RMSNorm公式缺均方系数、PaLM表内算术不一致、累计解码成本与MQA单KV头的措辞问题。",
+        "核验6段字幕范围；找到weight decay正确原论文2310.04415与Command A官方报告。"
+      ],
+      "resolution": "主Codex亲自撰写全文，纳入解释和勘误提示；保留全部原页。"
+    },
+    {
+      "agent": "/root/lecture03_research",
+      "role": "成稿审阅员（分阶段复用）",
+      "actual_collaboration": "followup_task 两次实际调用，分别完成全文审阅及修订复核。",
+      "findings": [
+        "通读35组正文及13题，确认覆盖和主要推导。",
+        "指出混合注意力34.375%粗口径不能当精确因果配对率。",
+        "修订后再次查看最终PDF第101、105、107页并确认正文和自测12正确。",
+        "独立按build映射比较原67页0.5倍渲染，67/67像素相等。"
+      ],
+      "resolution": "主Codex将正文及自测12补成精确42.577%因果配对率，并明确与34.375%粗估的区别；复核结论为可验收。"
+    }
+  ],
+  "validation": {
+    "claim": "主Codex实际执行claim --worker a --lecture 3；交付后执行done。",
+    "build": {
+      "lecture": 3,
+      "original_sha256": "20a953541b41a099bc69b8d809139a4ccdb2aefedaa13e50c766245fe4b5167e",
+      "notes_sha256": "a5ada337d86467502f6ff4c3638799e8437864902bf634ba12c196bdc2ad104a",
+      "original_pages": 67,
+      "output_pages": 107,
+      "explanation_pages": 40,
+      "render_check_scale": 0.5,
+      "validation": "PASS: original bytes, page geometry, content streams, extracted text, rendered pixels, explanation text",
+      "renderer": "PyMuPDF 1.28.2"
+    },
+    "original_pdf_unchanged_against_git_HEAD": true,
+    "numerical_and_structure_checks": [
+      {
+        "name": "coverage",
+        "result": "PASS",
+        "detail": "35 continuous groups cover original 1..67 exactly once"
+      },
+      {
+        "name": "schema",
+        "result": "PASS",
+        "detail": "exact required top-level fields"
+      },
+      {
+        "name": "reference integrity",
+        "result": "PASS",
+        "detail": "all section references resolve; no duplicate ids"
+      },
+      {
+        "name": "norm example",
+        "result": "PASS",
+        "detail": {
+          "ln": [
+            -1.0,
+            1.0
+          ],
+          "rms": [
+            0.4472135954999579,
+            1.3416407864998738
+          ]
+        }
+      },
+      {
+        "name": "activations",
+        "result": "PASS",
+        "detail": {
+          "gelu(-1)": -0.15865525393145707,
+          "silu(-1)": -0.2689414213699951,
+          "swiglu": [
+            1.4621171572600098,
+            -0.8068242641099853
+          ]
+        }
+      },
+      {
+        "name": "FFN matched parameters",
+        "result": "PASS",
+        "detail": "ordinary 2dm equals gated 3dm_g"
+      },
+      {
+        "name": "bias ratio",
+        "result": "PASS",
+        "detail": "5120 / 8388608 = .061035%"
+      },
+      {
+        "name": "T5 FFN",
+        "result": "PASS",
+        "detail": "T5 example ratio and parameter count"
+      },
+      {
+        "name": "aspect ratio budgets",
+        "result": "PASS",
+        "detail": "both approx 6.442B block parameters"
+      },
+      {
+        "name": "embedding budgets",
+        "result": "PASS",
+        "detail": "BF16: 250 and 1000 MiB"
+      },
+      {
+        "name": "RoPE identity",
+        "result": "PASS",
+        "detail": {
+          "dot": -0.73716776963004,
+          "relative": -0.73716776963004,
+          "shifted": -0.7371677696300399
+        }
+      },
+      {
+        "name": "RoPE frequency",
+        "result": "PASS",
+        "detail": "k=4 -> frequencies 1 and .01"
+      },
+      {
+        "name": "stable softmax",
+        "result": "PASS",
+        "detail": {
+          "p1000": 0.7310585786300049,
+          "p999": 0.2689414213699951
+        }
+      },
+      {
+        "name": "z-loss shifted logits",
+        "result": "PASS",
+        "detail": "shift (0,0) by -log2 yields logZ=0"
+      },
+      {
+        "name": "z-loss gradient",
+        "result": "PASS",
+        "detail": {
+          "analytic": [
+            0.0007663373964354916,
+            0.0002819197731494667,
+            0.0023022047692510725
+          ],
+          "finite_difference": [
+            0.000766337396448588,
+            0.00028191977313827415,
+            0.0023022047692918338
+          ]
+        }
+      },
+      {
+        "name": "softcap",
+        "result": "PASS",
+        "detail": {
+          "cap": 1.9998184085251902,
+          "derivative": 0.0001815832309438603
+        }
+      },
+      {
+        "name": "AdamW decay only",
+        "result": "PASS",
+        "detail": {
+          "1000_steps": 0.9048328935585562
+        }
+      },
+      {
+        "name": "KV cache",
+        "result": "PASS",
+        "detail": {
+          "32": 2147483648,
+          "8": 536870912,
+          "1": 67108864
+        }
+      },
+      {
+        "name": "decode intensity",
+        "result": "PASS",
+        "detail": "batch1=.6667, batch16=1.7778 in simplified operations/elements"
+      },
+      {
+        "name": "prefill intensity algebra",
+        "result": "PASS",
+        "detail": "F/M matches 1/[1/d+n/(kd)+1/(bn)] on 3 shapes"
+      },
+      {
+        "name": "causal mixed attention exact pairs",
+        "result": "PASS",
+        "detail": {
+          "full": 33558528,
+          "local": 7864832,
+          "ratio": 0.4257712376418894,
+          "coarse_ratio": 0.34375
+        }
+      },
+      {
+        "name": "original bytes unchanged",
+        "result": "PASS",
+        "detail": "20a953541b41a099bc69b8d809139a4ccdb2aefedaa13e50c766245fe4b5167e"
+      }
+    ],
+    "final_text_checks": {
+      "status": "PASS",
+      "output_pages": 107,
+      "intro_paragraphs_preserved": 3,
+      "self_checks_fully_preserved": 13,
+      "reference_urls_preserved": 19,
+      "annotation_page_text_bounds": "all inside page",
+      "review_render_pages": [
+        23,
+        27,
+        49,
+        52,
+        82,
+        88,
+        93,
+        101,
+        1,
+        104,
+        105,
+        107
+      ],
+      "source_hash_matches_build": true
+    },
+    "visual_review": {
+      "original": "主Codex查看67页全部缩略图；资料核对员单独渲染归一化、门控、RoPE、深宽比、稳定性与注意力成本等关键页。",
+      "main_final_pdf_pages": [
+        1,
+        23,
+        27,
+        49,
+        52,
+        82,
+        88,
+        93,
+        101,
+        104,
+        105,
+        107
+      ],
+      "subagent_final_pdf_pages": [
+        101,
+        105,
+        107
+      ],
+      "result": "中文/公式可读；检查页未见溢出、缺字或截断。跨页自测答案连续，按正文区域提取后13题问答全部保留。所有新增页文本块均在页内。"
+    },
+    "git_diff_check": "PASS（新文件另经JSON与渲染检查）",
+    "builder_issue_history": {
+      "initial": "共享构建器首次失败：insert_pdf丢失原页/Group透明度组；66页底边出现通道最大差1的像素差异。",
+      "diagnosis": "主Codex只在/tmp验证恢复原Group属性可让67页像素一致，并将诊断写入本review。",
+      "resolution": "协调者修复共享构建器并在本worktree放置BUILD_FIX.txt；主Codex未修改共享构建器。重新执行标准构建命令成功，无放宽像素断言。"
+    },
+    "build_command": "/data/zc/cs336-study-control-20261015/venv/bin/python /data/zc/cs336-study-integration/lectures/selfstudy/build_pdf.py --root /data/zc/cs336-study-a --lecture 03",
+    "shared_builder_sha256": "0ba9b0ccf2ef6114b615c34a9f6decf0103747e6f6d06c0a367c3a8474cdf35e",
+    "scope": "仅新增本讲JSON、融合PDF、build记录；未commit、push、修改其他讲义或共享构建器。BUILD_FIX.txt为协调者消息，不属于本讲提交文件。"
+  },
+  "limitations": [
+    "未逐页目视全部107页成品；原67页有逐页像素/文本/尺寸/内容流自动检查，新增40页有文本完整性与页内边界检查，另抽查代表页。",
+    "未运行模型训练、GPU benchmark或模型级KV缓存一致性测试；本讲补充的数值推导通过小型CPU检查，不能当作模型质量或吞吐实测。",
+    "课堂字幕为第三方缓存；带时间戳转述已核对，非教师审校逐字稿。",
+    "模型表格按Spring 2026原稿解释，未把全部型号表格重新核查为当前配置。PaLM原表矛盾只提示，不擅自改写原页。",
+    "第66页第三方模型图仅解释原图的混合结构思想，未把它扩展为未经原报告验证的新模型配置。",
+    "交由协调者进行跨worktree集成、重建与最终验收；不在本轮认领后续讲义。"
+  ]
+}

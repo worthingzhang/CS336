@@ -1,0 +1,129 @@
+{
+  "edition": "Spring 2026",
+  "local_baseline": "d59bbebb257c01b090e40bf60e2c0f960df67d05",
+  "course_url": "https://cs336.stanford.edu/",
+  "retrieved": "2026-10-15",
+  "subtitle_status": "Third-party preserved captions; not instructor-reviewed transcripts",
+  "original_files": [
+    {
+      "lecture": 3,
+      "filename": "lecture_03.pdf",
+      "sha256": "20a953541b41a099bc69b8d809139a4ccdb2aefedaa13e50c766245fe4b5167e",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/003/captions.source.srt",
+      "captions_sha256": "8ca9dad5d66193a541206bfde13ba27084e1ed5bd5ff8e65ae9070d8eeda1bbc",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_03.pdf"
+    },
+    {
+      "lecture": 4,
+      "filename": "lecture_04.pdf",
+      "sha256": "922da01cee70ed9dc9eef13d8116f1d6f45d663c12e632b3e80954c783bd3ce5",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/004/captions.source.srt",
+      "captions_sha256": "1233f838bbb0435441436a9e36ce7c4ba099909665bd719a849a5bc3c3f8d55c",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_04.pdf"
+    },
+    {
+      "lecture": 5,
+      "filename": "lecture_05.pdf",
+      "sha256": "a2d5664a3b5a1f246df2fe58b43189215f29931ec05bde4d8a6af4664f55cafe",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/005/captions.source.srt",
+      "captions_sha256": "cb2152f15de2543f9d4d6fb833f13db14e87bf1bbf5c5a1fdbbb5b4223a117b3",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_05.pdf"
+    },
+    {
+      "lecture": 6,
+      "filename": "lecture_06.py",
+      "sha256": "4be1200d93d1f38963d40d7c46a5be72dd67a230ebf8a48d446f018d5e8fa788",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/006/captions.source.srt",
+      "captions_sha256": "5e9a922b9b0426537d9cdb40fb3b0e6174784400eaabf863e8f9325f13fdfe30",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_06.py"
+    },
+    {
+      "lecture": 7,
+      "filename": "lecture_07.py",
+      "sha256": "7cdec6c6e2b78afd667c98e2826efea637bb076cd926c45b4f404b0528c42e60",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/007/captions.source.srt",
+      "captions_sha256": "0649c522d3a10397c9758a20febc29726990443767b12a32a027a91503ad9a6b",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_07.py"
+    },
+    {
+      "lecture": 8,
+      "filename": "lecture_08.pdf",
+      "sha256": "4c4d7674b333693f20f328935d84dd8a073362c9725c5e05302b6650751ad4d1",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/008/captions.source.srt",
+      "captions_sha256": "0ba5e518fbc1d787b472f628fc1b7021ee0e65d39a27fb78186139710df9c71c",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_08.pdf"
+    },
+    {
+      "lecture": 9,
+      "filename": "lecture_09.pdf",
+      "sha256": "92a5d9e26e65bb0a9d8c79b12ed7ea26d14530bf960dcf44f9ed5fd372f519fa",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/009/captions.source.srt",
+      "captions_sha256": "373e59c8a4e9c3432e0808d3ee1b4bf0910632157354760f28827dfafade4682",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_09.pdf"
+    },
+    {
+      "lecture": 10,
+      "filename": "lecture_10.py",
+      "sha256": "e79acd9115d75f0b8bf4902d97dc41c1f6b5016778321f19c2dc241a90cfe9b9",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/010/captions.source.srt",
+      "captions_sha256": "14e769ece014b486f7c87ca4cb218d2a53073cea19a87cb3a47f4b749bf365a6",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_10.py"
+    },
+    {
+      "lecture": 11,
+      "filename": "lecture_11.pdf",
+      "sha256": "b2148e683b4020f3fa95f5c95f37be55ebf6b2f57382f4c148517e84bf1df890",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/011/captions.source.srt",
+      "captions_sha256": "d9c5e57a940ceb5452d285a83cc7895dadc84216e4e5b4213a72b28ccb0c6b96",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_11.pdf"
+    },
+    {
+      "lecture": 12,
+      "filename": "lecture_12.py",
+      "sha256": "93e4049c9ee2665a7e5c883fee2c213e2eaa45aa5d452e447b5a15a5f353fd09",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/012/captions.source.srt",
+      "captions_sha256": "c3c51f93045565a153f8b558da3ff2e28b2b83905d1060c43714b68d3eba20f7",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_12.py"
+    },
+    {
+      "lecture": 13,
+      "filename": "lecture_13.py",
+      "sha256": "321fbab635378c275f65c41487119f3b9b171fc0ddef1454a4c607c9db72163b",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/013/captions.source.srt",
+      "captions_sha256": "37f5e8dfd1c3cfc1b7410ed29c82078e7f77262f65f4736bccceda025a4533d4",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_13.py"
+    },
+    {
+      "lecture": 14,
+      "filename": "lecture_14.py",
+      "sha256": "8e0e17f868002f2e8f73afed018b2dd787c0a1b371eec599c44d8dbfe555ae9b",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/014/captions.source.srt",
+      "captions_sha256": "aeced8aea744f067682e7af0d7d5094dfcbaa0d65443b6cc6dbc45dce8188073",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_14.py"
+    },
+    {
+      "lecture": 15,
+      "filename": "lecture_15.pdf",
+      "sha256": "42a4bc02408a96e0b414f789f32780ae1d8461000f872d93aa38c94fe369e862",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/015/captions.source.srt",
+      "captions_sha256": "6ade941643be632d00220fcdefc10ca758c17b340b213f28f776983a304f9f55",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_15.pdf"
+    },
+    {
+      "lecture": 16,
+      "filename": "lecture_16.pdf",
+      "sha256": "1a2bea825499f226b1c3fe990606253ad1b4fdbdf2ae90b4d12d7d0c07f2c8b3",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/016/captions.source.srt",
+      "captions_sha256": "0bba76eec08ea89429137d2cfdfc1b9d8cf95db1e3b63f51837ba9f38780f2c6",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_16.pdf"
+    },
+    {
+      "lecture": 17,
+      "filename": "lecture_17.py",
+      "sha256": "d8c3054ecce42fda3d92b4f21677a83d65cb525e8b3fbd4361c079f3cd20da52",
+      "captions_url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/017/captions.source.srt",
+      "captions_sha256": "44789f3008d5a101c68895aaed1575ba22717cc3a9b9bcfbda18d05b75187eb4",
+      "official_url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_17.py"
+    }
+  ]
+}

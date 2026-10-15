@@ -1,0 +1,112 @@
+{
+  "scope": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "edition": "Spring 2026",
+  "lectures": 15,
+  "pdf_lectures": 8,
+  "original_pdf_pages": 496,
+  "enhanced_pdf_pages": 811,
+  "added_pdf_pages": 315,
+  "pdf_teaching_sections": 276,
+  "pdf_self_checks": 115,
+  "python_lectures": 7,
+  "added_python_lines": 1526,
+  "added_python_cjk_characters": 36650,
+  "python_validation": "PASS: syntax, AST identity, executable token identity, original lines in order, diff check",
+  "pdf_validation": "PASS: original bytes, page order/geometry/content streams/text/pixels; all annotation/self-check/reference text extracted",
+  "delivery_hashes": "PASS against intake records",
+  "local_reading_links": "PASS",
+  "runtime_limits": "Full GPU/distributed lecture execution and edtrace webpage rendering were not run",
+  "files": [
+    {
+      "lecture": 3,
+      "pages": 107,
+      "path": "lectures/lecture_03_annotated.pdf"
+    },
+    {
+      "lecture": 4,
+      "pages": 101,
+      "path": "lectures/lecture_04_annotated.pdf"
+    },
+    {
+      "lecture": 5,
+      "pages": 90,
+      "path": "lectures/lecture_05_annotated.pdf"
+    },
+    {
+      "lecture": 8,
+      "pages": 116,
+      "path": "lectures/lecture_08_annotated.pdf"
+    },
+    {
+      "lecture": 9,
+      "pages": 99,
+      "path": "lectures/lecture_09_annotated.pdf"
+    },
+    {
+      "lecture": 11,
+      "pages": 95,
+      "path": "lectures/lecture_11_annotated.pdf"
+    },
+    {
+      "lecture": 15,
+      "pages": 105,
+      "path": "lectures/lecture_15_annotated.pdf"
+    },
+    {
+      "lecture": 16,
+      "pages": 98,
+      "path": "lectures/lecture_16_annotated.pdf"
+    },
+    {
+      "lecture": 6,
+      "added_lines": 249,
+      "path": "lectures/lecture_06.py"
+    },
+    {
+      "lecture": 7,
+      "added_lines": 236,
+      "path": "lectures/lecture_07.py"
+    },
+    {
+      "lecture": 10,
+      "added_lines": 281,
+      "path": "lectures/lecture_10.py"
+    },
+    {
+      "lecture": 12,
+      "added_lines": 277,
+      "path": "lectures/lecture_12.py"
+    },
+    {
+      "lecture": 13,
+      "added_lines": 183,
+      "path": "lectures/lecture_13.py"
+    },
+    {
+      "lecture": 14,
+      "added_lines": 133,
+      "path": "lectures/lecture_14.py"
+    },
+    {
+      "lecture": 17,
+      "added_lines": 167,
+      "path": "lectures/lecture_17.py"
+    }
+  ]
+}

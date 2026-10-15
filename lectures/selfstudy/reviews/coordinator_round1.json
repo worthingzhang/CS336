@@ -1,0 +1,54 @@
+{
+  "reviewer": "integration coordinator",
+  "lectures": {
+    "3": {
+      "inspected": [
+        "LayerNorm/RMSNorm definitions and invariances",
+        "RoPE matrix/coordinate pairing",
+        "head dimensional constraints and table inconsistency",
+        "causal global/local pair counts"
+      ],
+      "numerical_checks": "PASS",
+      "visual_sample": "RoPE explanation original pp.33-34"
+    },
+    "5": {
+      "inspected": [
+        "roofline",
+        "FP4 formats",
+        "coalescing and row-major indexing",
+        "tiling IO",
+        "wave quantization",
+        "online softmax and FlashAttention"
+      ],
+      "numerical_checks": "PASS: separate lecture_05_coordinator record",
+      "visual_sample": "FlashAttention explanation original p.54"
+    },
+    "9": {
+      "inspected": [
+        "binning bias/variance and dimension assumptions",
+        "critical batch size derivation",
+        "6ND constrained optimization and two exponent conventions"
+      ],
+      "numerical_checks": "PASS",
+      "visual_sample": "Joint scaling derivation original pp.43-44; readable without clipping"
+    },
+    "15": {
+      "inspected": [
+        "SFT masking",
+        "PPO clipping direction and local approximation",
+        "DPO optimal-policy KL derivation",
+        "Bradley-Terry substitution and gradient",
+        "entropy vs calibration"
+      ],
+      "numerical_checks": "PASS",
+      "visual_sample": "DPO optimal-policy derivation original p.56"
+    }
+  },
+  "notes_sha256": {
+    "3": "a5ada337d86467502f6ff4c3638799e8437864902bf634ba12c196bdc2ad104a",
+    "5": "7bfcbf437cc2d8df4a3c306829de444c96fa38b61fe0926c40f5c33996f3d356",
+    "9": "aceff471cf5c55e08630bbc79fb507e3f5926c18bf490a01c8901f05bddbbe78",
+    "15": "6951a65516bb929ca2ce5816df0423a8e1ecce1789926eaed8abd80ce3bbe45b"
+  },
+  "findings": []
+}

@@ -1,0 +1,408 @@
+{
+  "lecture": 11,
+  "worker": "c",
+  "status": "completed",
+  "worktree": "/data/zc/cs336-study-c",
+  "files": [
+    "lectures/selfstudy/lecture_11.json",
+    "lectures/lecture_11_annotated.pdf",
+    "lectures/selfstudy/lecture_11.build.json"
+  ],
+  "coverage": {
+    "original_pages": 58,
+    "sections": 33,
+    "body_characters": 14793,
+    "self_checks": 13,
+    "output_pages": 95,
+    "added_pages": 37,
+    "groups": [
+      {
+        "pages": [
+          1,
+          2
+        ],
+        "title": "从第9讲的拟合公式走到训练配方"
+      },
+      {
+        "pages": [
+          3,
+          4,
+          5
+        ],
+        "title": "公开模型报告是条件各异的实验记录"
+      },
+      {
+        "pages": [
+          6,
+          7
+        ],
+        "title": "MiniCPM：从可审计的小模型族出发"
+      },
+      {
+        "pages": [
+          8
+        ],
+        "title": "μP 配方先规范参数组，再谈“学习率不变”"
+      },
+      {
+        "pages": [
+          9,
+          10
+        ],
+        "title": "模型族与学习率扫描：检验迁移而非假定迁移"
+      },
+      {
+        "pages": [
+          11,
+          12
+        ],
+        "title": "批大小仍需单独拟合"
+      },
+      {
+        "pages": [
+          13
+        ],
+        "title": "为什么长 cosine 轨迹的中点不是短训练的终点"
+      },
+      {
+        "pages": [
+          14,
+          15
+        ],
+        "title": "WSD：共享稳定前缀，为每个终点另接衰减"
+      },
+      {
+        "pages": [
+          16,
+          17,
+          18
+        ],
+        "title": "用 WSD 终点连接第9讲的三种拟合方法"
+      },
+      {
+        "pages": [
+          19,
+          20,
+          21
+        ],
+        "title": "DeepSeek：不预设 μP，直接拟合 batch 与学习率"
+      },
+      {
+        "pages": [
+          22
+        ],
+        "title": "DeepSeek 的多阶段调度如何节约扫描成本"
+      },
+      {
+        "pages": [
+          23,
+          24
+        ],
+        "title": "IsoFLOP 找谷底，再用大模型检验预测"
+      },
+      {
+        "pages": [
+          25
+        ],
+        "title": "Qwen：有超参数缩放思路，不等于有完整复现实验"
+      },
+      {
+        "pages": [
+          26,
+          27
+        ],
+        "title": "MoE 缩放：总参数、激活参数和稀疏度"
+      },
+      {
+        "pages": [
+          28
+        ],
+        "title": "LLaMA 3：从预训练损失再走向下游能力"
+      },
+      {
+        "pages": [
+          29,
+          30
+        ],
+        "title": "架构选择也要随预算评估"
+      },
+      {
+        "pages": [
+          31,
+          32,
+          33
+        ],
+        "title": "StepFun 的问题：学习率究竟是哪些变量的函数"
+      },
+      {
+        "pages": [
+          34,
+          35
+        ],
+        "title": "网格搜索的曲面：有盆地不等于神经网络是凸的"
+      },
+      {
+        "pages": [
+          36,
+          37
+        ],
+        "title": "数据量主导 batch 的趋势与迁移范围"
+      },
+      {
+        "pages": [
+          38,
+          39,
+          40
+        ],
+        "title": "优化器比较：调参公平与规模效应"
+      },
+      {
+        "pages": [
+          41
+        ],
+        "title": "外推失败是配方失效的证据，不应藏进拟合曲线"
+      },
+      {
+        "pages": [
+          42,
+          43
+        ],
+        "title": "Muon：对矩阵更新做近似正交化"
+      },
+      {
+        "pages": [
+          44,
+          45
+        ],
+        "title": "μP 的目标：让小模型调好的基准超参数有用"
+      },
+      {
+        "pages": [
+          46
+        ],
+        "title": "两个不变量：激活不爆炸，特征变化不消失"
+      },
+      {
+        "pages": [
+          47
+        ],
+        "title": "A1 推导：谱范数控制能告诉我们什么"
+      },
+      {
+        "pages": [
+          48
+        ],
+        "title": "A2 推导：更新矩阵与更新后的特征"
+      },
+      {
+        "pages": [
+          49
+        ],
+        "title": "把更新尺度换成学习率：补齐非退化假设"
+      },
+      {
+        "pages": [
+          50
+        ],
+        "title": "μP 小结：量级规则不等于一个通用常数"
+      },
+      {
+        "pages": [
+          51
+        ],
+        "title": "Transformer 参数化：表中每一行对应不同角色"
+      },
+      {
+        "pages": [
+          52,
+          53
+        ],
+        "title": "复现迁移：最低损失是否落在同一列"
+      },
+      {
+        "pages": [
+          54
+        ],
+        "title": "RMSNorm 可学习增益：归一化后仍可能引入尺度"
+      },
+      {
+        "pages": [
+          55,
+          56
+        ],
+        "title": "Lion 与权重衰减：迁移的边界"
+      },
+      {
+        "pages": [
+          57,
+          58
+        ],
+        "title": "回到实践：一条有验证环节的缩放流程"
+      }
+    ],
+    "emphasis": [
+      "连接第9讲下包络/IsoFLOP/联合拟合与实际终点实验",
+      "cosine预算依赖、WSD共享稳定主干与分叉衰减、相关样本",
+      "MiniCPM与DeepSeek不同超参数迁移配方",
+      "batch、数据/模型比、MoE激活参数口径与下游映射",
+      "优化器公平调参、规模和训练长度混杂",
+      "μP的谱范数、秩一SGD、非退化损失变化及Adam假设",
+      "Transformer参数组与RMSNorm/Lion/weight decay迁移边界"
+    ]
+  },
+  "sources_used": [
+    {
+      "id": "course",
+      "title": "Stanford CS336 Spring 2026 官方课程与讲次表",
+      "url": "https://cs336.stanford.edu/",
+      "verification": "本会话实际web/HTTP核验；原页图表为主要内容依据"
+    },
+    {
+      "id": "slides",
+      "title": "Lecture 11 官方原课件，本讲页码与图表的首要来源",
+      "url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_11.pdf",
+      "verification": "本会话实际web/HTTP核验；原页图表为主要内容依据"
+    },
+    {
+      "id": "captions",
+      "title": "Lecture 011 公开录像字幕的第三方存档，非教师审校逐字稿",
+      "url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/011/captions.source.srt",
+      "verification": "本会话实际web/HTTP核验；原页图表为主要内容依据"
+    },
+    {
+      "id": "minicpm",
+      "title": "MiniCPM（原论文；μP、WSD与缩放实验）",
+      "url": "https://arxiv.org/html/2404.06395v3",
+      "verification": "本会话实际web/HTTP核验；原页图表为主要内容依据"
+    },
+    {
+      "id": "deepseek",
+      "title": "DeepSeek LLM（原论文；超参数与IsoFLOP实验）",
+      "url": "https://arxiv.org/html/2401.02954v1",
+      "verification": "本会话实际web/HTTP核验；原页图表为主要内容依据"
+    },
+    {
+      "id": "step",
+      "title": "Predictable Scale Part I: Step Law，作者项目与原论文入口",
+      "url": "https://step-law.github.io/",
+      "verification": "本会话实际web/HTTP核验；原页图表为主要内容依据"
+    },
+    {
+      "id": "optimizers",
+      "title": "Fantastic Pretraining Optimizers and Where to Find Them（原论文）",
+      "url": "https://arxiv.org/abs/2509.02046",
+      "verification": "本会话实际web/HTTP核验；原页图表为主要内容依据"
+    },
+    {
+      "id": "spectral",
+      "title": "A Spectral Condition for Feature Learning，原论文，简化μP谱尺度推导",
+      "url": "https://arxiv.org/html/2310.17813v1",
+      "verification": "本会话实际web/HTTP核验；原页图表为主要内容依据"
+    },
+    {
+      "id": "transfer",
+      "title": "A Large-Scale Exploration of μ-Transfer，原论文v4，与课件标题和表格对应",
+      "url": "https://arxiv.org/html/2404.05728v4",
+      "verification": "本会话实际web/HTTP核验；原页图表为主要内容依据"
+    }
+  ],
+  "source_verification_details": {
+    "official_raw_url": "https://raw.githubusercontent.com/stanford-cs336/lectures/main/lecture_11.pdf",
+    "official_raw_byte_match": true,
+    "original_sha256": "b2148e683b4020f3fa95f5c95f37be55ebf6b2f57382f4c148517e84bf1df890",
+    "subtitle_download_byte_match": true,
+    "transfer_version": "2404.05728v4固定版本与原页标题对应；不混用后来改题版本",
+    "unavailable_source": "原页41博客https://oa.williamheld.com/blog/delphi/实际HTTP返回403；未依赖未获取正文，讲解仅据原页并已声明"
+  },
+  "subtitle_ranges": [
+    {
+      "range": "00:10:05–00:13:40",
+      "topic": "cosine终点依赖与WSD复用/终点比较"
+    },
+    {
+      "range": "01:00:46–01:02:29",
+      "topic": "A1/A2、NTK对比与向量范数"
+    },
+    {
+      "range": "01:15:11–01:16:49",
+      "topic": "μP经验价值与缩放边界"
+    }
+  ],
+  "subagent_roles_and_findings": [
+    {
+      "agent": "/root/lecture11_factcheck",
+      "role": "资料/概念核对员",
+      "findings": [
+        "完整原页覆盖建议；核验关键原论文与字幕",
+        "指出DeepSeek末尾两个10%是阶段长度，实际LR降至31.6%与10%",
+        "核对μP谱范数上界、秩一、O与Theta条件缺口",
+        "确认transfer论文固定v4，失败结论限定实验范围"
+      ]
+    },
+    {
+      "agent": "/root/lecture11_factcheck",
+      "role": "独立成稿审阅员",
+      "findings": [
+        "发现原页17三图误读，主Codex已高清复核并修正为三个语料loss–compute图",
+        "建议补充BS∝L^-6.24及约96比的Ultratext/C=10^21限定，已采用",
+        "复算主要数值、确认连续58页覆盖",
+        "对三处修订进行第二次核对后，最终内容审阅通过，无剩余必须修改项"
+      ]
+    }
+  ],
+  "validation": {
+    "shared_builder": "PASS: original bytes, page geometry, content streams, extracted text, rendered pixels, explanation text",
+    "build_command": "/data/zc/cs336-study-control-20261015/venv/bin/python /data/zc/cs336-study-integration/lectures/selfstudy/build_pdf.py --root \"$PWD\" --lecture 11",
+    "notes_sha256": "c1babcfdd657215a4407f16925a9fe1041639dce99a1d5461ccf8e2c98805b36",
+    "pdf_sha256": "90de2d3bff299267f2cc10d470df22f9d339680d8a14211252a3aa172c84772c",
+    "original_page_pixels": "全部58页逐页、0.5倍渲染像素一致",
+    "notes_text": "共享构建器验证全部标题/正文/自测/引用文本完整提取",
+    "numerical_checks": {
+      "cosine_50_of_200": 0.8535533905932737,
+      "wsd_total_million": 430,
+      "wsd_savings": 0.3857142857142857,
+      "rounded_minicpm_ratio": 91.20913812939101,
+      "deepseek_lr_16x": 0.7071067811865476,
+      "deepseek_batch_16x": 2.4766671644347973,
+      "batch_loss_0_9": 1.9298641613214937,
+      "step_batch_4x": 2.2068674800839183,
+      "step_steps_4x": 1.8125238765346687,
+      "decay_high": 0.36769542477096373,
+      "decay_low": 0.7787764418703372,
+      "outer_product_spectral_norm": 0.2,
+      "outer_product_output_norm": 0.282842712474619
+    },
+    "visual_review": {
+      "all_original_pages": "主Codex查看58页联系表并对关键图表和公式单页高清复核",
+      "output_pages_inspected": [
+        1,
+        19,
+        24,
+        28,
+        73,
+        77,
+        81,
+        89,
+        92,
+        93,
+        94,
+        95
+      ],
+      "finding": "中文与公式可读，无正文截断/溢出；参考条目可跨页，文字与链接均完整"
+    },
+    "git_diff_check": "PASS",
+    "preexisting_files_hash_check": {
+      "count": 5,
+      "changed": [],
+      "lecture09_preserved": true
+    },
+    "python_validator": "不适用；本讲原稿为PDF，无Python原稿编辑",
+    "gpu_benchmarks": "未运行"
+  },
+  "limitations": [
+    "未重跑论文大规模训练，经验结论依原课件/论文且已限定配方范围",
+    "第47–49页是带条件的量级启发式，中文显式补充原页证明缺口，未擅改原稿",
+    "仅代表页视觉检查；全页文字完整性与原页像素完整性由共享构建器检查",
+    "待协调者集成后的独立内容/版面复核；未创建commit、PR或推送"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "lecture": 10,
+  "worker": "c",
+  "files": [
+    "lectures/lecture_10.py"
+  ],
+  "coverage": [
+    "学习目标、先修、符号、来源索引",
+    "TTFT/TPOT/吞吐与批大小",
+    "MLP及注意力prefill/decode FLOPs和HBM流量",
+    "KV与权重容量、GQA固定B数值复算和原稿矛盾注释",
+    "MLA/CLA/滑窗/压缩稀疏注意力",
+    "量化、QAT/PTQ、AWQ图解及原稿范围限定",
+    "结构化剪枝与蒸馏",
+    "推测采样接受概率、归一化残差、已核对三类例子、首拒及全接受流程",
+    "连续批、变长计算、分页、共享前缀与copy-on-write",
+    "分散自测及答案"
+  ],
+  "sources_used": [
+    {
+      "source": "原Python讲义",
+      "path": "lectures/lecture_10.py",
+      "role": "完整阅读全文并保留全部原始行"
+    },
+    {
+      "source": "第三方公开录像字幕缓存",
+      "path": "/data/zc/cs336-study-control-20261015/sources/lecture_10.srt",
+      "role": "核对主题及GQA口述方向，非教师审校逐字稿"
+    },
+    {
+      "url": "https://jax-ml.github.io/scaling-book/inference/",
+      "role": "实际web打开，原稿资源模型参考"
+    },
+    {
+      "url": "https://arxiv.org/abs/2211.17192",
+      "role": "实际web打开，推测采样原论文"
+    },
+    {
+      "url": "https://arxiv.org/html/2302.01318v1",
+      "role": "subagent实际核验Algorithm2和Theorem1"
+    },
+    {
+      "url": "https://arxiv.org/abs/2309.06180",
+      "role": "实际web打开，PagedAttention原论文"
+    },
+    {
+      "url": "https://www.usenix.org/conference/osdi22/presentation/yu",
+      "role": "实际web打开，Orca原论文页面"
+    },
+    {
+      "url": "https://aclanthology.org/2023.emnlp-main.298/",
+      "role": "subagent实际核验GQA uptraining"
+    },
+    {
+      "url": "https://arxiv.org/html/2405.04434v5",
+      "role": "subagent实际核验MLA缓存及解耦RoPE"
+    },
+    {
+      "url": "https://arxiv.org/abs/2405.12981",
+      "role": "实际web打开，CLA原论文"
+    },
+    {
+      "url": "https://arxiv.org/html/2306.00978v5",
+      "role": "subagent实际核验AWQ动机实验与最终缩放方法"
+    },
+    {
+      "url": "https://arxiv.org/abs/2407.14679",
+      "role": "实际web打开，剪枝蒸馏原论文"
+    },
+    {
+      "url": "https://docs.nvidia.com/deeplearning/transformer-engine/features/low_precision_training/fp8_current_scaling/fp8_current_scaling.html",
+      "role": "subagent实际核验E4M3最大有限值448"
+    }
+  ],
+  "subtitle_ranges": [
+    {
+      "range": "00:49:27–00:50:40",
+      "use": "GQA固定B改善两项、增B才时延变差"
+    },
+    {
+      "range": "01:14:04–01:15:20",
+      "use": "推测采样算法定位，公式以论文为准"
+    },
+    {
+      "range": "01:17:39–01:19:25",
+      "use": "continuous/selective batching"
+    },
+    {
+      "range": "01:19:35–01:23:30",
+      "use": "分页和前缀共享"
+    }
+  ],
+  "subagent_roles_and_findings": [
+    {
+      "agent": "/root/lecture10_audit",
+      "roles": [
+        "资料/概念核对员",
+        "成稿只读审阅员"
+      ],
+      "findings": [
+        "独立复算K40/B64、K8/B64、K8/B256，与主Codex计算一致",
+        "指出原Worse latency、now fits的比较口径",
+        "核验采样残差例子、MLA/AWQ/FP8限定",
+        "唯一一轮成稿审阅PASS，无必须修复项"
+      ]
+    }
+  ],
+  "validation": {
+    "static": {
+      "lecture": 10,
+      "file": "lectures/lecture_10.py",
+      "baseline": "d59bbebb257c01b090e40bf60e2c0f960df67d05",
+      "original_lines": 611,
+      "annotated_lines": 892,
+      "added_lines": 281,
+      "added_cjk_characters": 5755,
+      "syntax": "PASS",
+      "ast": "IDENTICAL",
+      "executable_tokens": "IDENTICAL",
+      "original_lines_in_order": "PASS",
+      "diff_check": "PASS",
+      "runtime": "Not covered by this static check"
+    },
+    "numeric_examples": "CPU复算性能数据、matmul/MLP强度及采样最终分布通过",
+    "protected_lectures": "第9/11讲8个既有文件SHA256保持不变",
+    "images_inspected": [
+      "speculative-sampling-algorithm.png",
+      "gqa-speed.png",
+      "gqa-accuracy.png",
+      "awq-schema.png",
+      "mla-schema.png",
+      "deepseek-v4-attention.png"
+    ],
+    "review": "一轮成稿只读审阅PASS"
+  },
+  "limitations": [
+    "仅Python注释交付，无PDF页数；未运行GPU或整讲benchmark",
+    "未测试edtrace页面渲染；协调者可继续检查展示效果",
+    "遵守额度策略，复用已有核对，不新增调研或完整证明；原英文疑点均仅以中文相邻注释说明"
+  ]
+}

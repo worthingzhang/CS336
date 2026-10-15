@@ -1,0 +1,15 @@
+{
+  "lecture": 12,
+  "file": "lectures/lecture_12.py",
+  "baseline": "d59bbebb257c01b090e40bf60e2c0f960df67d05",
+  "original_lines": 394,
+  "annotated_lines": 671,
+  "added_lines": 277,
+  "added_cjk_characters": 7712,
+  "syntax": "PASS",
+  "ast": "IDENTICAL",
+  "executable_tokens": "IDENTICAL",
+  "original_lines_in_order": "PASS",
+  "diff_check": "PASS",
+  "runtime": "Not covered by this static check"
+}

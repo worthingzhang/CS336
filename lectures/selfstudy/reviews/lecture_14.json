@@ -1,0 +1,67 @@
+{
+  "lecture": 14,
+  "worker": "b",
+  "files": [
+    "lectures/lecture_14.py"
+  ],
+  "coverage": [
+    "文本转换的有损性及对去重的影响",
+    "过滤目标、分数、困惑度、阈值与预算",
+    "精确去重碰撞及排序复杂度",
+    "Jaccard/shingle/空集与包含边界",
+    "MinHash概率证明、独立性与估计误差",
+    "LSH AND/OR推导、候选与确认、转折点",
+    "聚类非传递性",
+    "混合token权重、重复次数、UniMax单位、模拟重复",
+    "合成数据教师适配、软件执行条件、评测来源泄漏",
+    "四题带解答自测"
+  ],
+  "sources_used": [
+    {
+      "path": "lectures/lecture_14.py",
+      "role": "完整阅读原稿，保留全部英文与代码"
+    },
+    {
+      "path": "/data/zc/cs336-study-control-20261015/sources/lecture_14.srt",
+      "role": "缓存第三方字幕，关键词段落核对；非教师审校稿"
+    },
+    {
+      "path": "/data/zc/cs336-study-control-20261015/AUDIT_TARGETS.json",
+      "role": "第14讲审计目标"
+    }
+  ],
+  "subtitle_ranges": [
+    "00:31:35–00:32:54 Jaccard/MinHash",
+    "00:39:10–00:39:22 bands"
+  ],
+  "subagent_roles_and_findings": [
+    {
+      "agent": "minhash_check",
+      "roles": [
+        "概念核对员",
+        "成稿审阅员"
+      ],
+      "findings": "一次概念核对及一次限定成稿审阅；确认理想随机排列与独立性、有限哈希近似、LSH公式及数值、转折点并非50%、非传递例子正确；无需修改。主Codex完成整讲编辑及验收。"
+    }
+  ],
+  "validation": {
+    "lecture": 14,
+    "file": "lectures/lecture_14.py",
+    "baseline": "d59bbebb257c01b090e40bf60e2c0f960df67d05",
+    "original_lines": 464,
+    "annotated_lines": 597,
+    "added_lines": 133,
+    "added_cjk_characters": 3360,
+    "syntax": "PASS",
+    "ast": "IDENTICAL",
+    "executable_tokens": "IDENTICAL",
+    "original_lines_in_order": "PASS",
+    "diff_check": "PASS",
+    "runtime": "Not covered by this static check"
+  },
+  "limitations": [
+    "按用户额度策略仅复用原稿和缓存，无新增外部调研",
+    "仅静态验证及公式数值核算，未运行整讲、edtrace渲染或GPU实验",
+    "保留原稿随机assert与UniMax公式，中文注释说明边界；协调者仍需集成验收"
+  ]
+}

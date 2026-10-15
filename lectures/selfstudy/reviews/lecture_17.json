@@ -1,0 +1,79 @@
+{
+  "lecture": 17,
+  "worker": "a",
+  "files": [
+    "lectures/lecture_17.py"
+  ],
+  "coverage": [
+    "整讲主线与先修",
+    "CLIP双向损失、L2归一化、温度、批内负例与零样本边界",
+    "SigLIP逐对损失、B归一化、正负比例与偏置",
+    "视觉编码器/投影器/LM形状接口及冻结梯度",
+    "LLaVA训练阶段与合成数据噪声",
+    "OneVision多图视频预算与AnyRes",
+    "Qwen-VL查询压缩与训练阶段",
+    "Qwen2动态分辨率/MRoPE及66 token算术疑点",
+    "Qwen3交错位置、时间戳、长度权重、DeepStack",
+    "Chameleon离散VQ、重建与自回归生成、稳定性",
+    "7道带解答自测"
+  ],
+  "sources_used": {
+    "original": "lectures/lecture_17.py; 原稿既有图与论文索引",
+    "subtitle": "/data/zc/cs336-study-control-20261015/sources/lecture_17.srt (第三方字幕，非教师审校稿)",
+    "http_verified": [
+      "https://arxiv.org/abs/2103.00020",
+      "https://arxiv.org/abs/2303.15343",
+      "https://arxiv.org/abs/2304.08485",
+      "https://arxiv.org/abs/2408.03326",
+      "https://arxiv.org/abs/2308.12966",
+      "https://arxiv.org/abs/2409.12191",
+      "https://arxiv.org/abs/2511.21631",
+      "https://arxiv.org/abs/2405.09818",
+      "https://arxiv.org/abs/1711.00937"
+    ],
+    "full_text_opened": [
+      "https://arxiv.org/html/2409.12191v2",
+      "https://arxiv.org/html/2408.03326v2"
+    ],
+    "note": "仅复用原稿文献与缓存字幕；部分论文仅核验摘要页面可达及身份，未做新的广泛调研。SigLIP HTML请求404后使用原稿abs页面。"
+  },
+  "subtitle_ranges": [
+    "00:06:48–00:07:57",
+    "00:23:13–00:24:49",
+    "00:32:39–00:34:12",
+    "00:39:52–00:40:23",
+    "00:50:43–00:50:50",
+    "00:56:05–00:56:41",
+    "01:00:07–01:00:11"
+  ],
+  "subagent_roles_and_findings": [
+    {
+      "agent": "concept_review",
+      "roles": [
+        "CLIP/SigLIP与接口概念核对员",
+        "一轮成稿审阅员"
+      ],
+      "findings": "公式、温度、B归一化、正负比例、接口形状及冻结梯度解释通过；指出自测1将对称性充分条件写成必要条件，主会话已修正。还提醒TPU性能口径，不将原文括号推广为通用硬件结论。"
+    }
+  ],
+  "validation": {
+    "validator": "python3 /data/zc/cs336-study-integration/lectures/selfstudy/validate_python.py --root \"$PWD\" --lecture 17",
+    "syntax": "PASS",
+    "ast": "IDENTICAL",
+    "executable_tokens": "IDENTICAL",
+    "original_lines_in_order": "PASS",
+    "git_diff_check": "PASS",
+    "original_lines": 302,
+    "annotated_lines": 469,
+    "added_comment_lines": 167,
+    "added_cjk_characters": 4497,
+    "cpu_examples": "PASS: softplus losses 0.127/2.127, 576/64/128 patches, 4032-token budget, 13-bit codebook, bias -1.099",
+    "main_review": "主会话阅读全文并编辑整讲；结合子agent一次审阅修正充分条件表述后重跑必要静态验证"
+  },
+  "limitations": [
+    "未运行edtrace网页渲染或全讲/GPU训练；协调者仍需集成验收。",
+    "66 token算术疑点和AnyRes归属疑点只作注释提示，保留英文原文。",
+    "原稿中的经验性能与SOTA措辞按讲义时点理解。",
+    "第3、4、6讲及已有其他任务文件保持不动；未提交commit。"
+  ]
+}

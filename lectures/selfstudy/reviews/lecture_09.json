@@ -1,0 +1,604 @@
+{
+  "lecture": 9,
+  "worker": "c",
+  "status": "done",
+  "files": [
+    "lectures/lecture_09_annotated.pdf",
+    "lectures/selfstudy/lecture_09.json",
+    "lectures/selfstudy/lecture_09.build.json"
+  ],
+  "coverage": {
+    "original_pages": 57,
+    "output_pages": 99,
+    "explanation_pages": 42,
+    "sections": 36,
+    "body_characters": 19669,
+    "self_checks": 15,
+    "page_groups": [
+      {
+        "pages": [
+          1
+        ],
+        "title": "本讲究竟要解决什么问题"
+      },
+      {
+        "pages": [
+          2,
+          3,
+          4
+        ],
+        "title": "从昂贵的大训练转向可验证的小规模预测"
+      },
+      {
+        "pages": [
+          5,
+          6
+        ],
+        "title": "样本复杂度：保证上界与经验预测的区别"
+      },
+      {
+        "pages": [
+          7,
+          8,
+          9
+        ],
+        "title": "历史图像：学习曲线的形状需要比较"
+      },
+      {
+        "pages": [
+          10,
+          11
+        ],
+        "title": "神经缩放的三个区域与系统效率"
+      },
+      {
+        "pages": [
+          12,
+          13
+        ],
+        "title": "先认清横轴：三类资源不是同一变量"
+      },
+      {
+        "pages": [
+          14,
+          15
+        ],
+        "title": "双对数直线的代数与数据收益"
+      },
+      {
+        "pages": [
+          16,
+          17
+        ],
+        "title": "均值估计：完整推导一个真正可证明的幂律"
+      },
+      {
+        "pages": [
+          18
+        ],
+        "title": "为什么不能把神经网络指数当成均值估计指数"
+      },
+      {
+        "pages": [
+          19
+        ],
+        "title": "非参数分箱：把维度依赖推导清楚"
+      },
+      {
+        "pages": [
+          20
+        ],
+        "title": "内在维度理论：解释性假说与可测量证据"
+      },
+      {
+        "pages": [
+          21,
+          22
+        ],
+        "title": "数据组成与分布偏移：斜率和截距分别代表什么"
+      },
+      {
+        "pages": [
+          23
+        ],
+        "title": "数据混合预测：复杂拟合应胜过简单基线"
+      },
+      {
+        "pages": [
+          24
+        ],
+        "title": "重复数据：累计token不等于独立信息"
+      },
+      {
+        "pages": [
+          25
+        ],
+        "title": "计算近乎不限时：经验曲线可以被更好的配方突破"
+      },
+      {
+        "pages": [
+          26,
+          27
+        ],
+        "title": "质量、数量与重复共同决定过滤强度"
+      },
+      {
+        "pages": [
+          28,
+          29,
+          30
+        ],
+        "title": "用缩放曲线比较架构：先规定公平的横轴"
+      },
+      {
+        "pages": [
+          31
+        ],
+        "title": "跨架构缩放：效率技巧也要接受规模检验"
+      },
+      {
+        "pages": [
+          32
+        ],
+        "title": "优化器缩放：平行曲线也有实际价值"
+      },
+      {
+        "pages": [
+          33,
+          34
+        ],
+        "title": "深度、宽度和头维度：固定参数预算下的形状"
+      },
+      {
+        "pages": [
+          35,
+          36
+        ],
+        "title": "参数的价值：嵌入、输出头与稀疏专家"
+      },
+      {
+        "pages": [
+          37,
+          38
+        ],
+        "title": "临界批大小：步数与样本开销的平衡点"
+      },
+      {
+        "pages": [
+          39
+        ],
+        "title": "临界批大小也随目标损失缩放"
+      },
+      {
+        "pages": [
+          40
+        ],
+        "title": "学习率迁移：预测最优点移动，或改变参数化"
+      },
+      {
+        "pages": [
+          41,
+          42
+        ],
+        "title": "预训练损失与下游能力：预测目标不能偷换"
+      },
+      {
+        "pages": [
+          43,
+          44
+        ],
+        "title": "联合缩放：固定计算预算下推导最优模型和数据"
+      },
+      {
+        "pages": [
+          45,
+          46
+        ],
+        "title": "Kaplan与Chinchilla：相近拟合问题为何建议不同"
+      },
+      {
+        "pages": [
+          47
+        ],
+        "title": "方法一：训练曲线的下包络"
+      },
+      {
+        "pages": [
+          48
+        ],
+        "title": "方法二：IsoFLOPs如何做成一张U形曲线"
+      },
+      {
+        "pages": [
+          49
+        ],
+        "title": "方法三：拟合完整损失曲面"
+      },
+      {
+        "pages": [
+          50,
+          51
+        ],
+        "title": "分歧解释一：输出计算与小模型训练配方"
+      },
+      {
+        "pages": [
+          52
+        ],
+        "title": "分歧解释二：参数口径造成局部曲率"
+      },
+      {
+        "pages": [
+          53
+        ],
+        "title": "Chinchilla复核：曲面优化也会出错"
+      },
+      {
+        "pages": [
+          54
+        ],
+        "title": "训练最优与部署总成本最优是不同目标"
+      },
+      {
+        "pages": [
+          55
+        ],
+        "title": "IsoFLOPs可以迁移，拟合常数不能照搬"
+      },
+      {
+        "pages": [
+          56,
+          57
+        ],
+        "title": "把整讲收束成可执行的缩放研究流程"
+      }
+    ],
+    "all_pages_once_in_order": true
+  },
+  "sources_used": [
+    {
+      "id": "course",
+      "url": "https://cs336.stanford.edu/",
+      "status": 200,
+      "bytes": 33995,
+      "title": "Stanford CS336 | Language Modeling from Scratch",
+      "sha256": "bd57fae299fec60afedb5a22edb325a68107fa1af0cd83641695470587f7a4a7"
+    },
+    {
+      "id": "slides",
+      "url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_09.pdf",
+      "status": 200,
+      "bytes": 209486,
+      "title": "lectures/lecture_09.pdf at main · stanford-cs336/lectures · GitHub",
+      "sha256": "b129cc157392f07888a4f879ffc15f1cbfea74879989a1aa9b518e6cd6621ba0"
+    },
+    {
+      "id": "captions",
+      "url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/009/captions.source.srt",
+      "status": 200,
+      "bytes": 142758,
+      "title": "PDF or subtitle",
+      "sha256": "373e59c8a4e9c3432e0808d3ee1b4bf0910632157354760f28827dfafade4682"
+    },
+    {
+      "id": "vc",
+      "url": "https://www.cs.cmu.edu/~epxing/Class/10701/slides/lecture16-VC.pdf",
+      "status": 200,
+      "bytes": 579308,
+      "title": "PDF or subtitle",
+      "sha256": "b0ac0530b561a04e76149497c11fcf5a245f0874c1073b18b36630735c92eadc"
+    },
+    {
+      "id": "banko",
+      "url": "https://aclanthology.org/P01-1005/",
+      "status": 200,
+      "bytes": 32917,
+      "title": "Scaling to Very Very Large Corpora for Natural Language Disambiguation - ACL Anthology",
+      "sha256": "1639bbce7c419b485ff965b96843ea8ef0def3e87149995e1167eb8324e082ea"
+    },
+    {
+      "id": "kolachina",
+      "url": "https://aclanthology.org/P12-1003/",
+      "status": 200,
+      "bytes": 36939,
+      "title": "Prediction of Learning Curves in Machine Translation - ACL Anthology",
+      "sha256": "77a1e224b14838116b0e72126b458e61903a972764d2228f7d35e7281ec6d8bf"
+    },
+    {
+      "id": "hestness",
+      "url": "https://arxiv.org/abs/1712.00409",
+      "status": 200,
+      "bytes": 44753,
+      "title": "[1712.00409] Deep Learning Scaling is Predictable, Empirically",
+      "sha256": "5010b5a84b4964045d9ac9d9191a67db16c333a2221d3702b73b76dd1b06d313"
+    },
+    {
+      "id": "kaplan",
+      "url": "https://arxiv.org/abs/2001.08361",
+      "status": 200,
+      "bytes": 43049,
+      "title": "[2001.08361] Scaling Laws for Neural Language Models",
+      "sha256": "44f1df7bd62aaf763ba82e0478327135793398e7cd0e10d714b0492bfe92af98"
+    },
+    {
+      "id": "nonparametric",
+      "url": "https://stat.cmu.edu/~larry/=sml/nonpar.pdf",
+      "status": 200,
+      "bytes": 1215745,
+      "title": "PDF or subtitle",
+      "sha256": "c39ef40f34dfa4249f700c0bc2032e2cc9e5f2348213e5f06ed89d9cd27cad5a"
+    },
+    {
+      "id": "bahri",
+      "url": "https://arxiv.org/abs/2102.06701",
+      "status": 200,
+      "bytes": 46054,
+      "title": "[2102.06701] Explaining Neural Scaling Laws",
+      "sha256": "166baa40de67b91438a2bc221c43211da250dc9dbad64b0ba99c29f58ac53273"
+    },
+    {
+      "id": "hashimoto",
+      "url": "https://proceedings.mlr.press/v139/hashimoto21a.html",
+      "status": 200,
+      "bytes": 15234,
+      "title": "Model Performance Scaling with Multiple Data Sources",
+      "sha256": "827ead3d06fd0c807a3da4f88d74df5a613381b3c0f35de7bf33999e0b69903d"
+    },
+    {
+      "id": "mixing",
+      "url": "https://arxiv.org/abs/2403.16952",
+      "status": 200,
+      "bytes": 42680,
+      "title": "[2403.16952] Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+      "sha256": "2f7ae073414aafd83dc60d9f5d65c159a689809edce9041c578bc070656a5d39"
+    },
+    {
+      "id": "data-decide",
+      "url": "https://arxiv.org/abs/2504.11393",
+      "status": 200,
+      "bytes": 44272,
+      "title": "[2504.11393] DataDecide: How to Predict Best Pretraining Data with Small Experiments",
+      "sha256": "0b1f0a1e0af7959e3bacba5a899c7ef227066ad46b7d0d5989a0c5f49c4a3c43"
+    },
+    {
+      "id": "data-repeat",
+      "url": "https://arxiv.org/abs/2305.16264",
+      "status": 200,
+      "bytes": 42834,
+      "title": "[2305.16264] Scaling Data-Constrained Language Models",
+      "sha256": "088e3fc9309e2552264d72ab9c53fcaa634dcc31f30df9a08dfd83f3d85c2877"
+    },
+    {
+      "id": "infinite",
+      "url": "https://arxiv.org/abs/2509.14786",
+      "status": 200,
+      "bytes": 43194,
+      "title": "[2509.14786] Pre-training under infinite compute",
+      "sha256": "64d9652a104fd69f1138152ee5031c26a67a76bb01e37800911e855fc2efc90a"
+    },
+    {
+      "id": "data-filter",
+      "url": "https://arxiv.org/abs/2404.07177",
+      "status": 200,
+      "bytes": 43855,
+      "title": "[2404.07177] Scaling Laws for Data Filtering -- Data Curation cannot be Compute Agnostic",
+      "sha256": "3b44a6811aa10e8f266cbcdb7e1b3b2993d4dbb3b1d0c2f68d203fe78dd74439"
+    },
+    {
+      "id": "architecture",
+      "url": "https://arxiv.org/abs/2207.10551",
+      "status": 200,
+      "bytes": 42348,
+      "title": "[2207.10551] Scaling Laws vs Model Architectures: How does Inductive Bias Influence Scaling?",
+      "sha256": "cdadb55640ad4641c6cd047020523c72907aa06ec899cc51d25ff4ecd2385ddc"
+    },
+    {
+      "id": "moe",
+      "url": "https://arxiv.org/abs/2501.12370",
+      "status": 200,
+      "bytes": 42893,
+      "title": "[2501.12370] Parameters vs FLOPs: Scaling Laws for Optimal Sparsity for Mixture-of-Experts Language Models",
+      "sha256": "08cbad09301ea4a7470c715394c4d47e0db0df25d957364c940f6a1636e66ce5"
+    },
+    {
+      "id": "batch",
+      "url": "https://arxiv.org/abs/1812.06162",
+      "status": 200,
+      "bytes": 43240,
+      "title": "[1812.06162] An Empirical Model of Large-Batch Training",
+      "sha256": "ddd27ec1e4c66314c9012d6b00c3b46a3b956e78eb61e19db48e15a8a893354d"
+    },
+    {
+      "id": "mup",
+      "url": "https://arxiv.org/abs/2203.03466",
+      "status": 200,
+      "bytes": 43748,
+      "title": "[2203.03466] Tensor Programs V: Tuning Large Neural Networks via Zero-Shot Hyperparameter Transfer",
+      "sha256": "1a547b389579415b4e5405a675df4c3cff8a77434f56c7df6e68bec0563dcbdf"
+    },
+    {
+      "id": "transfer",
+      "url": "https://arxiv.org/abs/2109.10686",
+      "status": 200,
+      "bytes": 44350,
+      "title": "[2109.10686] Scale Efficiently: Insights from Pre-training and Fine-tuning Transformers",
+      "sha256": "29934ed25a9ecb140a39ce706350aef60f94994aa350eb0cc39aa38ba28ed6b7"
+    },
+    {
+      "id": "rosenfeld",
+      "url": "https://arxiv.org/abs/1909.12673",
+      "status": 200,
+      "bytes": 42928,
+      "title": "[1909.12673] A Constructive Prediction of the Generalization Error Across Scales",
+      "sha256": "1277e551acb7316d215bc4a006017000fca2d5e7a5b4e123a708fcb6ab633583"
+    },
+    {
+      "id": "chinchilla",
+      "url": "https://arxiv.org/abs/2203.15556",
+      "status": 200,
+      "bytes": 44600,
+      "title": "[2203.15556] Training Compute-Optimal Large Language Models",
+      "sha256": "bc4809d5c487933ab6aed4ea233d1281b3e0b14ffba026cf441688f35d8ed146"
+    },
+    {
+      "id": "resolve",
+      "url": "https://arxiv.org/html/2406.19146v1",
+      "status": 200,
+      "bytes": 402571,
+      "title": "Resolving Discrepancies in Compute-Optimal Scaling of Language Models",
+      "sha256": "041c2ce5acd48ad743247ebabc256531e4284a6910cec1c296f3f6b3ddaa78d0"
+    },
+    {
+      "id": "reconcile",
+      "url": "https://arxiv.org/html/2406.12907v2",
+      "status": 200,
+      "bytes": 251667,
+      "title": "Reconciling Kaplan and Chinchilla Scaling Laws",
+      "sha256": "e470b2e03355abd2409f86fd70c7f07288034f1609cb6ed588eef254cb029fcd"
+    },
+    {
+      "id": "replicate",
+      "url": "https://arxiv.org/html/2404.10102v2",
+      "status": 200,
+      "bytes": 144194,
+      "title": "Chinchilla Scaling: A replication attempt",
+      "sha256": "4c1707ad1b7d0a185d42c8b5d9498a9c1e42099f727f912e93e5b41aebe4acd7"
+    },
+    {
+      "id": "diffusion",
+      "url": "https://arxiv.org/abs/2305.18619",
+      "status": 200,
+      "bytes": 40218,
+      "title": "[2305.18619] Likelihood-Based Diffusion Language Models",
+      "sha256": "7780b0995daa206086be60da52713dc94854a26057713ed9d7b7ec978c47f0e4"
+    }
+  ],
+  "subtitle_ranges": [
+    "00:03:08–00:04:02",
+    "00:08:27–00:10:14",
+    "00:18:23–00:19:17",
+    "00:19:46–00:20:20",
+    "00:20:38–00:21:29",
+    "00:22:28–00:23:22",
+    "00:23:37–00:25:17",
+    "00:29:02–00:30:09",
+    "00:44:32–00:46:37",
+    "00:48:25–00:50:50",
+    "00:53:43–00:56:35",
+    "01:03:17–01:04:28",
+    "01:04:28–01:05:44",
+    "01:08:42–01:10:21",
+    "01:10:29–01:10:47",
+    "01:12:20–01:14:25",
+    "01:14:25–01:16:02",
+    "01:16:02–01:16:47"
+  ],
+  "subagent_roles_and_findings": [
+    {
+      "agent": "/root/lecture09_verify",
+      "role": "资料与概念核对员",
+      "findings": [
+        "p19 derived n^-2/(d+2) under stated noisy regression assumptions",
+        "p25 empirical curve is not strict loss lower bound",
+        "p38 cumulative exposures, steps and wall time distinguished",
+        "p49 actual Chinchilla objective is log-residual Huber",
+        "p51 output-head FLOPs matter even with tied embeddings",
+        "p53 replication reconstructs graph data rather than acquiring complete raw runs"
+      ],
+      "resolved": true
+    },
+    {
+      "agent": "/root/lecture09_verify",
+      "role": "完整成稿审阅员，分阶段复用",
+      "findings": [
+        "Read whole JSON and all 57 original-page images; coverage, mathematical examples, subtitle samples passed",
+        "Corrected nonparametric author to Ryan Tibshirani with Larry Wasserman",
+        "Changed reused p19 constant K to c_b/c_v",
+        "Added p6 smooth density bound and p43 Kaplan joint formula limit explanations"
+      ],
+      "assessment": "Core self-study content passes; main Codex responsible for PDF layout checks"
+    }
+  ],
+  "validation": {
+    "build_command": "/data/zc/cs336-study-control-20261015/venv/bin/python /data/zc/cs336-study-integration/lectures/selfstudy/build_pdf.py --root /data/zc/cs336-study-c --lecture 9",
+    "shared_builder_modified_by_worker": false,
+    "temporary_wrapper_removed": true,
+    "shared_builder_sha256": "0ba9b0ccf2ef6114b615c34a9f6decf0103747e6f6d06c0a367c3a8474cdf35e",
+    "builder_report": "PASS: original bytes, page geometry, content streams, extracted text, rendered pixels, explanation text",
+    "original_sha256": "92a5d9e26e65bb0a9d8c79b12ed7ea26d14530bf960dcf44f9ed5fd372f519fa",
+    "original_matches_git_HEAD": true,
+    "all_57_original_content_streams_geometry_text_equal": true,
+    "all_57_original_pixels_equal_at_scale_1": true,
+    "all_chinese_teaching_blocks_and_answers_present": true,
+    "text_bbox_outside_safe_page_bounds": [],
+    "visual_review_output_pages": [
+      1,
+      3,
+      10,
+      30,
+      39,
+      41,
+      61,
+      65,
+      71,
+      80,
+      95,
+      96,
+      97,
+      99
+    ],
+    "numeric_cpu_validation": {
+      "coverage": "PASS 1..57 exactly once; 36 groups of 1-3 pages",
+      "numerical_examples": {
+        "architecture_crossing": 57.6650390625,
+        "finite_class_bound": 0.05759878345972952,
+        "10x_data_alpha01": 0.7943282347242815,
+        "100x_data_alpha": 0.19897000433601877,
+        "4epochs_effective_M": 289.63616764856727,
+        "10epochs_effective_M": 385.06387948964084,
+        "architecture_10pct_cost": 2.5937424601000023,
+        "optimizer_5pct_data": 1.670182570115092,
+        "12layer_768_params_M": 84.934656,
+        "24layer_width": 543.0580079512685,
+        "1000compute_ratio": 1.7378008287493756,
+        "inference_break_even": 1200000000000.0
+      },
+      "critical_batch": [
+        {
+          "batch": 100,
+          "steps": 11000.0,
+          "examples": 1100000.0
+        },
+        {
+          "batch": 1000,
+          "steps": 2000.0,
+          "examples": 2000000.0
+        },
+        {
+          "batch": 10000,
+          "steps": 1100.0,
+          "examples": 11000000.0
+        }
+      ],
+      "joint_optimum_derivative": "PASS",
+      "original_equals_git_HEAD": true,
+      "original_sha256": "92a5d9e26e65bb0a9d8c79b12ed7ea26d14530bf960dcf44f9ed5fd372f519fa"
+    },
+    "source_urls_http_200": 27,
+    "initial_build_issue": "Initial shared builder dropped transparency Group and failed strict pixels at bottom row with delta=1. Main diagnosed and reported. Shared builder was updated externally; prescribed direct command now passes. No lecture-specific wrapper retained.",
+    "font_issue_resolved": "Self-check 14 bold superscript digits failed strict extracted-text check; changed question numbers to ASCII scientific notation.",
+    "git_diff_check": "PASS",
+    "final_visual_review": "PASS: reading guide, dense formulas, data-repetition chart explanation, muP explanation, self-check pagination and final references reviewed; no clipping observed.",
+    "delivered_hashes": {
+      "lectures/lecture_09_annotated.pdf": "6bf37e6546b242b8e5884118f3dd6bc8fd227f5571b9c61bab6fa8ba8670a9b6",
+      "lectures/selfstudy/lecture_09.json": "aceff471cf5c55e08630bbc79fb507e3f5926c18bf490a01c8901f05bddbbe78",
+      "lectures/selfstudy/lecture_09.build.json": "d29bd357bd1ff7e8cd7ed69e3943223c3d6f52d6d3638fe42f564f36e30762a1"
+    }
+  },
+  "limitations": [
+    "Subtitles are third-party preserved public-video captions, not teacher-approved transcript; classroom content is paraphrased with time ranges.",
+    "Original p54 historical model token/parameter ratios are preserved but not each independently re-audited; comments do not rely on them as universal recommendations.",
+    "Scientific/empirical scaling claims remain conditional on model, data, metric and compute regime; examples marked as editor derivations.",
+    "Coordinator should perform final integrated PDF reading and pedagogical acceptance; no remaining build failure."
+  ]
+}

@@ -1,0 +1,591 @@
+{
+  "lecture": 8,
+  "worker": "b",
+  "status": "ready_for_integration",
+  "worktree": "/data/zc/cs336-study-b",
+  "completed_at": "2026-10-15T09:44:59.107817+00:00",
+  "files": [
+    {
+      "path": "/data/zc/cs336-study-b/lectures/selfstudy/lecture_08.json",
+      "sha256": "3b55d8456077974029907733714da8ea0a7132267e9b47e42d698ad28e616f52",
+      "bytes": 71191
+    },
+    {
+      "path": "/data/zc/cs336-study-b/lectures/lecture_08_annotated.pdf",
+      "sha256": "548db47e2496de9e64e88e412668512e1fc9d46897901dc901b1a9bfd0c8597c",
+      "bytes": 8627419
+    },
+    {
+      "path": "/data/zc/cs336-study-b/lectures/selfstudy/lecture_08.build.json",
+      "sha256": "959fd4d56246dba00bd6a3934d70cd90abca11c00b8b89da3b2ed64012573a74",
+      "bytes": 9110
+    }
+  ],
+  "coverage": {
+    "original_pages": 73,
+    "output_pages": 116,
+    "added_pages": 43,
+    "sections": 39,
+    "self_checks": 13,
+    "cjk_characters_in_json": 14150,
+    "page_coverage": "Exact ordered 1..73; each group 1-3 pages",
+    "groups": [
+      {
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "title": "本讲的问题：怎样把一个训练任务放到一群设备上"
+      },
+      {
+        "pages": [
+          4,
+          5,
+          6
+        ],
+        "title": "为什么单卡不够：算力、容量和互联是三份预算"
+      },
+      {
+        "pages": [
+          7
+        ],
+        "title": "五种集合操作：先弄清结果放在哪里"
+      },
+      {
+        "pages": [
+          8
+        ],
+        "title": "AllReduce的分解与“2P通信量”的来源"
+      },
+      {
+        "pages": [
+          9,
+          10
+        ],
+        "title": "拓扑决定通信代价：环面、树与交换网络"
+      },
+      {
+        "pages": [
+          11,
+          12
+        ],
+        "title": "高速域不能无限扩大：把拓扑当成本问题"
+      },
+      {
+        "pages": [
+          13,
+          14
+        ],
+        "title": "从网络到并行：区分数据轴、参数轴和激活轴"
+      },
+      {
+        "pages": [
+          15,
+          16
+        ],
+        "title": "朴素数据并行：梯度可加，模型状态仍复制"
+      },
+      {
+        "pages": [
+          17,
+          18
+        ],
+        "title": "先列状态账本，再理解ZeRO的切分图"
+      },
+      {
+        "pages": [
+          19,
+          20,
+          21
+        ],
+        "title": "ZeRO-1：分配更新责任，复用原来的通信预算"
+      },
+      {
+        "pages": [
+          22,
+          23
+        ],
+        "title": "ZeRO-2：梯度产生后及时归约并释放"
+      },
+      {
+        "pages": [
+          24,
+          25,
+          26
+        ],
+        "title": "ZeRO-3与FSDP：完整权重只在需要时出现"
+      },
+      {
+        "pages": [
+          27,
+          28
+        ],
+        "title": "通信与显存汇总：复算8张80 GB卡的容量表"
+      },
+      {
+        "pages": [
+          29,
+          30,
+          31
+        ],
+        "title": "为什么还需要模型并行：批量与激活的限制"
+      },
+      {
+        "pages": [
+          32,
+          33
+        ],
+        "title": "按层放卡：先看懂朴素串行时间线"
+      },
+      {
+        "pages": [
+          34
+        ],
+        "title": "流水线微批：气泡比、空闲比例与利用率"
+      },
+      {
+        "pages": [
+          35,
+          36
+        ],
+        "title": "为什么PP仍有用：少量边界通信换容量"
+      },
+      {
+        "pages": [
+          37,
+          38
+        ],
+        "title": "更细的流水线调度：交错与近零气泡"
+      },
+      {
+        "pages": [
+          39,
+          40
+        ],
+        "title": "TP的代数核心：列切分后接行切分"
+      },
+      {
+        "pages": [
+          41
+        ],
+        "title": "把TP放进Transformer：注意力头也能分工"
+      },
+      {
+        "pages": [
+          42,
+          43
+        ],
+        "title": "TP通信为何重：把8bsh的常数拆开"
+      },
+      {
+        "pages": [
+          44,
+          45
+        ],
+        "title": "显存随时间变化：峰值由同时存活的对象决定"
+      },
+      {
+        "pages": [
+          46,
+          47
+        ],
+        "title": "激活显存公式：34、10与24究竟是什么"
+      },
+      {
+        "pages": [
+          48,
+          49
+        ],
+        "title": "SP与选择性重算：去掉复制项和二次保存项"
+      },
+      {
+        "pages": [
+          50,
+          51
+        ],
+        "title": "EP：把token送到专家，而不是把每个专家都切碎"
+      },
+      {
+        "pages": [
+          52,
+          53
+        ],
+        "title": "EP与其他并行的组合：先画通信组再乘数字"
+      },
+      {
+        "pages": [
+          54
+        ],
+        "title": "CP与Ring Attention：分片完整上下文的工作"
+      },
+      {
+        "pages": [
+          55
+        ],
+        "title": "用总表检查每种并行到底解决了什么"
+      },
+      {
+        "pages": [
+          56
+        ],
+        "title": "以每卡batch理解通信与计算的交叉点"
+      },
+      {
+        "pages": [
+          57,
+          58
+        ],
+        "title": "设计一个并行布局：先容纳，再把剩余卡用于数据"
+      },
+      {
+        "pages": [
+          59,
+          60
+        ],
+        "title": "历史规模实验：检查乘积与固定条件"
+      },
+      {
+        "pages": [
+          61,
+          62
+        ],
+        "title": "TP/PP取舍与“多算反而更快”的条件"
+      },
+      {
+        "pages": [
+          63
+        ],
+        "title": "OLMo案例：FSDP也是完整训练方案"
+      },
+      {
+        "pages": [
+          64,
+          65
+        ],
+        "title": "DeepSeek与Yi：状态分片可叠加模型并行"
+      },
+      {
+        "pages": [
+          66,
+          67
+        ],
+        "title": "Llama 3：并行布局随训练阶段改变，可靠性也计入效率"
+      },
+      {
+        "pages": [
+          68
+        ],
+        "title": "Gemma 2：不同硬件仍在解同样的切分问题"
+      },
+      {
+        "pages": [
+          69,
+          70
+        ],
+        "title": "MoE与长上下文案例：不要把所有并行度相乘"
+      },
+      {
+        "pages": [
+          71,
+          72
+        ],
+        "title": "Qwen与总览表：将案例当模式，而非固定配方"
+      },
+      {
+        "pages": [
+          73
+        ],
+        "title": "整讲贯通：给一份并行方案做验收"
+      }
+    ],
+    "emphases": [
+      "集合操作的输入输出、每rank发送/接收/全群统计区别、环通信与延迟前提",
+      "DP梯度权重和模型状态复制，ZeRO1/2/3状态生命周期与16/12字节精度切换",
+      "PP气泡比与空闲比例，微批/全局批量，交错与拆分反向",
+      "TP矩阵形状和小矩阵、每层四次AllReduce，SP/CP/EP与通信组",
+      "激活常数逐项推导，重算的容量/吞吐条件，原图与案例注释"
+    ]
+  },
+  "sources_used": [
+    {
+      "id": "slides",
+      "title": "CS336 Spring 2026 Lecture 8 原课件；本稿的页序与主要内容基准",
+      "url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_08.pdf",
+      "verification": "Official raw PDF fetched with HTTP 200 and byte-identical to local; course page confirms Spring 2026"
+    },
+    {
+      "id": "course",
+      "title": "CS336官方课程主页；核对Spring 2026及第8讲对应关系",
+      "url": "https://cs336.stanford.edu/",
+      "verification": "Primary accessed web or downloaded full paper; source auditor also checked relevant primary sources"
+    },
+    {
+      "id": "captions",
+      "title": "第8讲公开录像字幕的第三方缓存；未由教师审校，用于时间定位",
+      "url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/008/captions.source.srt",
+      "verification": "HTTP fetched by primary; byte hash recorded"
+    },
+    {
+      "id": "nccl",
+      "title": "NVIDIA NCCL Collective Operations；官方集合操作语义",
+      "url": "https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/usage/collectives.html",
+      "verification": "Primary accessed web or downloaded full paper; source auditor also checked relevant primary sources"
+    },
+    {
+      "id": "zero",
+      "title": "Rajbhandari等：ZeRO；原论文，状态分片与通信分析",
+      "url": "https://arxiv.org/html/1910.02054v3",
+      "verification": "Source auditor actually accessed official document or primary paper and reported relevant sections"
+    },
+    {
+      "id": "fsdp",
+      "title": "Zhao等：PyTorch FSDP；原论文，单元分片与通信计算调度",
+      "url": "https://arxiv.org/html/2304.11277v1",
+      "verification": "Source auditor actually accessed official document or primary paper and reported relevant sections"
+    },
+    {
+      "id": "fsdp-doc",
+      "title": "PyTorch官方FSDP教程；按需参数汇集与梯度分片",
+      "url": "https://docs.pytorch.org/tutorials/intermediate/FSDP_tutorial.html",
+      "verification": "Source auditor actually accessed official document or primary paper and reported relevant sections"
+    },
+    {
+      "id": "megatron",
+      "title": "Narayanan等：Efficient Large-Scale Language Model Training；原论文，TP/PP/DP与实测案例",
+      "url": "https://arxiv.org/abs/2104.04473",
+      "verification": "Primary accessed web or downloaded full paper; source auditor also checked relevant primary sources"
+    },
+    {
+      "id": "activation",
+      "title": "Korthikanti等：Reducing Activation Recomputation；原论文，特定Transformer激活账本",
+      "url": "https://arxiv.org/abs/2205.05198",
+      "verification": "Primary accessed web or downloaded full paper; source auditor also checked relevant primary sources"
+    },
+    {
+      "id": "zero-bubble",
+      "title": "Qi等：Zero Bubble Pipeline Parallelism；原论文，拆分反向与调度边界",
+      "url": "https://arxiv.org/abs/2401.10241",
+      "verification": "Primary accessed web or downloaded full paper; source auditor also checked relevant primary sources"
+    },
+    {
+      "id": "ring",
+      "title": "Liu等：Ring Attention with Blockwise Transformers；原论文，长上下文分块通信",
+      "url": "https://arxiv.org/abs/2310.01889",
+      "verification": "Primary accessed web or downloaded full paper; source auditor also checked relevant primary sources"
+    },
+    {
+      "id": "moe",
+      "title": "NVIDIA Megatron Core官方MoE文档；并行组折叠与配置建议，内容可能随版本更新",
+      "url": "https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/features/moe.html",
+      "verification": "Primary accessed web or downloaded full paper; source auditor also checked relevant primary sources"
+    },
+    {
+      "id": "scaling-book",
+      "title": "JAX How To Scale Your Model：训练并行分析；原页56所引技术说明",
+      "url": "https://jax-ml.github.io/scaling-book/training/",
+      "verification": "Primary accessed web or downloaded full paper; source auditor also checked relevant primary sources"
+    },
+    {
+      "id": "deepseek",
+      "title": "DeepSeek-V3 Technical Report；原报告，PP/EP与DualPipe",
+      "url": "https://arxiv.org/html/2412.19437v2",
+      "verification": "Source auditor actually accessed official document or primary paper and reported relevant sections"
+    },
+    {
+      "id": "llama",
+      "title": "The Llama 3 Herd of Models；原报告，分阶段布局与故障统计",
+      "url": "https://arxiv.org/abs/2407.21783",
+      "verification": "Primary accessed web or downloaded full paper; source auditor also checked relevant primary sources"
+    }
+  ],
+  "source_fetch_details": [
+    {
+      "id": "slides",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "captions",
+      "url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/008/captions.source.srt",
+      "status": 200,
+      "bytes": 144857,
+      "sha256": "0ba5e518fbc1d787b472f628fc1b7021ee0e65d39a27fb78186139710df9c71c"
+    },
+    {
+      "id": "slides-corrected-path",
+      "url": "https://raw.githubusercontent.com/stanford-cs336/lectures/main/lecture_08.pdf",
+      "status": 200,
+      "sha256": "4c4d7674b333693f20f328935d84dd8a073362c9725c5e05302b6650751ad4d1",
+      "same_local": true
+    }
+  ],
+  "subtitle_ranges": [
+    {
+      "range": "00:26:14–00:27:49",
+      "topic": "FSDP versus layer-wise PP and parameter-total communication",
+      "reader": "primary and subagent"
+    },
+    {
+      "range": "00:50:01–00:51:44",
+      "topic": "SP on-demand activations",
+      "reader": "primary and subagent"
+    },
+    {
+      "range": "00:52:33–00:53:15",
+      "topic": "more recomputation possible; selected formula is not absolute minimum",
+      "reader": "primary and subagent"
+    },
+    {
+      "range": "01:12:46–01:13:03",
+      "topic": "teacher corrects Dolma to OLMo",
+      "reader": "primary and subagent"
+    },
+    {
+      "range": "01:14:50–01:16:24",
+      "topic": "Llama phases and failures",
+      "reader": "primary and subagent"
+    }
+  ],
+  "subagent_roles_and_findings": {
+    "agent": "/root/lecture08_audit",
+    "model_override": false,
+    "actual_invocation": "spawn_agent source audit, followup_task final manuscript review, send_message revision confirmation",
+    "roles": [
+      "资料/概念核对员",
+      "成稿审阅员"
+    ],
+    "scope": "Read only; primary personally read all slide text, viewed all original-page contact sheets, wrote whole JSON, built and accepted PDF. Subagent did not author whole lecture.",
+    "source_audit_findings": [
+      "第28页5B/param正确，K从12改8须明确",
+      "第8页AllReduce恒等，34页气泡分母，43页TP元素/字节前提",
+      "24/t并非纯MLP，34sbh/t非绝对下界",
+      "EP可能复用DP，不能从全轴乘积确定Mixtral DP",
+      "Llama阶段CP/DP与故障148分类边界"
+    ],
+    "manuscript_findings_fixed": [
+      {
+        "pages": [
+          66,
+          67
+        ],
+        "issue": "常规Llama行误用了前一行batch/DP=32",
+        "resolution": "改为16，128×16×8192=16,777,216 tokens；保留第一行32的说明"
+      },
+      {
+        "pages": [
+          59,
+          60
+        ],
+        "issue": "1536卡表行误称175B",
+        "resolution": "改为145.6B；后页175B/530B曲线不改"
+      },
+      {
+        "pages": [
+          56
+        ],
+        "issue": "图B按token计数而统一记号按序列样本计数",
+        "resolution": "明确B图=全局序列数×s及400/850单位"
+      },
+      {
+        "pages": [
+          46,
+          47
+        ],
+        "issue": "可进一步展开11与19常数",
+        "resolution": "增加attention和MLP保存张量分项"
+      }
+    ],
+    "final_review": "PASS; all revisions verified by subagent; no remaining blocker or important issue. PDF visual acceptance performed by primary."
+  },
+  "validation": {
+    "builder": "PASS: original bytes, page geometry, content streams, extracted text, rendered pixels, explanation text",
+    "builder_command": "/data/zc/cs336-study-control-20261015/venv/bin/python /data/zc/cs336-study-integration/lectures/selfstudy/build_pdf.py --root /data/zc/cs336-study-b --lecture 8",
+    "shared_builder_unmodified": true,
+    "lecture_specific_wrapper_created": false,
+    "original_sha256": "4c4d7674b333693f20f328935d84dd8a073362c9725c5e05302b6650751ad4d1",
+    "official_raw_match": true,
+    "render_pixel_comparison_scale": 0.5,
+    "original_pages_compared": 73,
+    "all_explanation_text_retained": true,
+    "numeric_cpu_checks": {
+      "17-18 ZeRO16byte states": "PASS",
+      "28 ZeRO12byte states": "PASS",
+      "28 capacities": "PASS",
+      "4-6 state sizing": "PASS",
+      "8 ring": "PASS",
+      "11-12 link counts": "PASS",
+      "34 pipeline": "PASS",
+      "46-49 activation MiB": "PASS",
+      "35 and43 PP TP MiB": "PASS",
+      "59 parallel table": "PASS",
+      "57 batch": "PASS",
+      "66 llama devices": "PASS",
+      "66 llama tokens": "PASS",
+      "68 gemma chips": "PASS",
+      "selfcheck communication": "PASS",
+      "selfcheck weighted grad": "PASS",
+      "39-40 toy product": "PASS",
+      "39-40 GeLU column row partition": "PASS"
+    },
+    "visual_review": {
+      "rendered_for_visual_review": [
+        1,
+        11,
+        13,
+        28,
+        39,
+        42,
+        51,
+        60,
+        71,
+        74,
+        86,
+        92,
+        103,
+        113,
+        116
+      ],
+      "notes_bounds_anomalies": [],
+      "actually_viewed_output_pages": [
+        1,
+        11,
+        13,
+        28,
+        39,
+        42,
+        51,
+        60,
+        71,
+        74,
+        86,
+        92,
+        103,
+        113,
+        116
+      ],
+      "result": "PASS: representative beginning, dense formulas, graph interpretation, final lesson and references; no missing Chinese or clipping seen"
+    },
+    "original_figures": "All pages 1..73 rendered in contact sheets and viewed; original66 additionally enlarged",
+    "diff_check": "PASS: git diff --check; added JSON checked for trailing whitespace",
+    "python_static_validator": {
+      "command": "python3 /data/zc/cs336-study-integration/lectures/selfstudy/validate_python.py --root \"$PWD\" --lecture 8",
+      "result": "NOT APPLICABLE (invoked, exit 1)",
+      "reason": "Lecture 8 is PDF; baseline has no lectures/lecture_08.py. No AST/token preservation claim made."
+    },
+    "build_issue_resolved": "Initial explanation text check caught superscript 9 extraction as NUL in a mixed-script paragraph; source notation changed to readable ASCII exponents/subscripts and shared builder rerun PASS.",
+    "preserved_existing_files": {
+      "lectures/lecture_05_annotated.pdf": "956ed0d3311d3006970aab2e9a11d7aa2f9fe431f73521e98d718c691f56dcc7",
+      "lectures/selfstudy/lecture_05.json": "7bfcbf437cc2d8df4a3c306829de444c96fa38b61fe0926c40f5c33996f3d356",
+      "lectures/selfstudy/lecture_05.build.json": "a582aa5d14f8b0ad27a13ca3e18911b868701f2506f69c963364e201fc3419df",
+      "lectures/selfstudy/BUILD_FIX.txt": "7fb8b5ff601f78b1a9b90bd6cc1a08e93c5ebe9b958d1d8d4685072c1e961e80"
+    },
+    "git_commit_created": false
+  },
+  "limitations": [
+    "未运行多GPU benchmark；公式与案例为CPU算术/代数核验，不宣称性能实测。",
+    "Python静态验证器不适用于PDF本讲；以共享PDF验证为准。",
+    "仅逐页自动验证原页完整性，并目检15个代表成稿页；协调者仍需集成及独立最终验收。",
+    "原课件历史硬件/模型案例保留；没有把第三方表格或未披露配置变成官方当前事实。",
+    "字幕第三方缓存用于定位和转述，不视为教师审校逐字稿。"
+  ]
+}

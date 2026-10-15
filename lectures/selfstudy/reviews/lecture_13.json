@@ -1,0 +1,103 @@
+{
+  "lecture": 13,
+  "worker": "b",
+  "files": [
+    "lectures/lecture_13.py"
+  ],
+  "coverage": {
+    "functions": [
+      "main",
+      "motivation",
+      "raw_sources",
+      "copyright",
+      "common_crawl",
+      "wikipedia",
+      "github",
+      "arxiv",
+      "bert",
+      "books_corpus",
+      "gpt2_webtext",
+      "ccnet",
+      "t5_c4",
+      "gpt3",
+      "the_pile",
+      "project_gutenberg",
+      "books3",
+      "stackexchange",
+      "gopher_massivetext",
+      "llama",
+      "refinedweb",
+      "dolma",
+      "dclm",
+      "nemotron_cc",
+      "the_stack",
+      "common_pile"
+    ],
+    "audit_targets": [
+      "原始来源与加工数据集",
+      "WARC/WET/WAT处理链",
+      "来源可见性/许可/发布/实际训练消耗分离",
+      "下一讲过滤去重混合联系"
+    ],
+    "annotation_lines_added": 183,
+    "cjk_characters_added": 5453
+  },
+  "sources_used": [
+    {
+      "url": "https://commoncrawl.org/get-started",
+      "verification": "HTTP 200，主会话与subagent读取格式说明"
+    },
+    {
+      "url": "https://info.arxiv.org/help/license/index.html",
+      "verification": "HTTP 200，许可说明"
+    },
+    {
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title17-section302&num=0&edition=prelim",
+      "verification": "HTTP 200，用于保护期非统一75年的概念核验"
+    },
+    {
+      "path": "sources/lecture_13.srt",
+      "kind": "第三方缓存字幕，仅作辅助核对"
+    },
+    {
+      "path": "lectures/lecture_13.py",
+      "kind": "Spring 2026 原稿与原有论文链接；未重新广泛检索"
+    }
+  ],
+  "subtitle_ranges": [
+    "00:35:00–00:36:06 WARC/WET有损抽取",
+    "00:48:03–00:49:22 CCNet百科相似度代理",
+    "00:59:25–00:59:37 Gopher收集量与训练量",
+    "01:00:24–01:00:46 LLaMA引用网页",
+    "01:16:35–01:18:04 许可层次与合成数据"
+  ],
+  "subagent_roles_and_findings": {
+    "agent": "lecture13_risks",
+    "roles": [
+      "资料/概念核对员",
+      "成稿指定风险审阅员"
+    ],
+    "findings": "一轮指定风险审阅无阻断问题；采纳license laundering不限集合标签的措辞修正；主会话整讲编辑验收。"
+  },
+  "validation": {
+    "lecture": 13,
+    "file": "lectures/lecture_13.py",
+    "baseline": "d59bbebb257c01b090e40bf60e2c0f960df67d05",
+    "original_lines": 622,
+    "annotated_lines": 805,
+    "added_lines": 183,
+    "added_cjk_characters": 5453,
+    "syntax": "PASS",
+    "ast": "IDENTICAL",
+    "executable_tokens": "IDENTICAL",
+    "original_lines_in_order": "PASS",
+    "diff_check": "PASS",
+    "runtime": "Not covered by this static check"
+  },
+  "numeric_checks": "CPU断言通过：PPL 2，Jaccard 0.6，1000B*.4*.75=300B，训练600B约2次平均曝光；其他比例按明确分母给出。",
+  "limitations": [
+    "未运行edtrace渲染或全讲执行；注释在Python原稿中阅读，非已验证网页显示",
+    "法律案例与时间敏感规模保留原稿历史叙述，不声称更新到当前；copyright.gov两页403未作为成功核验来源",
+    "协调者仍需集成检查；未提交；第5、7、8讲及其现有产物未修改"
+  ]
+}

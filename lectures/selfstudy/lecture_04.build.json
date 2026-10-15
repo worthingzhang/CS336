@@ -1,0 +1,531 @@
+{
+  "lecture": 4,
+  "original_sha256": "922da01cee70ed9dc9eef13d8116f1d6f45d663c12e632b3e80954c783bd3ce5",
+  "notes_sha256": "7e1b44d950eae7c895312773c7ece84e25b2e5c098bef1ccf16000759c655186",
+  "original_pages": 60,
+  "output_pages": 101,
+  "explanation_pages": 41,
+  "original_page_mapping": [
+    {
+      "original": 1,
+      "output": 2
+    },
+    {
+      "original": 2,
+      "output": 3
+    },
+    {
+      "original": 3,
+      "output": 4
+    },
+    {
+      "original": 4,
+      "output": 6
+    },
+    {
+      "original": 5,
+      "output": 8
+    },
+    {
+      "original": 6,
+      "output": 10
+    },
+    {
+      "original": 7,
+      "output": 12
+    },
+    {
+      "original": 8,
+      "output": 14
+    },
+    {
+      "original": 9,
+      "output": 16
+    },
+    {
+      "original": 10,
+      "output": 18
+    },
+    {
+      "original": 11,
+      "output": 19
+    },
+    {
+      "original": 12,
+      "output": 21
+    },
+    {
+      "original": 13,
+      "output": 22
+    },
+    {
+      "original": 14,
+      "output": 24
+    },
+    {
+      "original": 15,
+      "output": 25
+    },
+    {
+      "original": 16,
+      "output": 27
+    },
+    {
+      "original": 17,
+      "output": 28
+    },
+    {
+      "original": 18,
+      "output": 29
+    },
+    {
+      "original": 19,
+      "output": 31
+    },
+    {
+      "original": 20,
+      "output": 32
+    },
+    {
+      "original": 21,
+      "output": 33
+    },
+    {
+      "original": 22,
+      "output": 35
+    },
+    {
+      "original": 23,
+      "output": 36
+    },
+    {
+      "original": 24,
+      "output": 37
+    },
+    {
+      "original": 25,
+      "output": 39
+    },
+    {
+      "original": 26,
+      "output": 40
+    },
+    {
+      "original": 27,
+      "output": 42
+    },
+    {
+      "original": 28,
+      "output": 43
+    },
+    {
+      "original": 29,
+      "output": 45
+    },
+    {
+      "original": 30,
+      "output": 46
+    },
+    {
+      "original": 31,
+      "output": 48
+    },
+    {
+      "original": 32,
+      "output": 50
+    },
+    {
+      "original": 33,
+      "output": 51
+    },
+    {
+      "original": 34,
+      "output": 52
+    },
+    {
+      "original": 35,
+      "output": 54
+    },
+    {
+      "original": 36,
+      "output": 56
+    },
+    {
+      "original": 37,
+      "output": 57
+    },
+    {
+      "original": 38,
+      "output": 59
+    },
+    {
+      "original": 39,
+      "output": 60
+    },
+    {
+      "original": 40,
+      "output": 62
+    },
+    {
+      "original": 41,
+      "output": 64
+    },
+    {
+      "original": 42,
+      "output": 65
+    },
+    {
+      "original": 43,
+      "output": 67
+    },
+    {
+      "original": 44,
+      "output": 69
+    },
+    {
+      "original": 45,
+      "output": 70
+    },
+    {
+      "original": 46,
+      "output": 72
+    },
+    {
+      "original": 47,
+      "output": 74
+    },
+    {
+      "original": 48,
+      "output": 76
+    },
+    {
+      "original": 49,
+      "output": 77
+    },
+    {
+      "original": 50,
+      "output": 79
+    },
+    {
+      "original": 51,
+      "output": 81
+    },
+    {
+      "original": 52,
+      "output": 82
+    },
+    {
+      "original": 53,
+      "output": 83
+    },
+    {
+      "original": 54,
+      "output": 85
+    },
+    {
+      "original": 55,
+      "output": 87
+    },
+    {
+      "original": 56,
+      "output": 89
+    },
+    {
+      "original": 57,
+      "output": 91
+    },
+    {
+      "original": 58,
+      "output": 92
+    },
+    {
+      "original": 59,
+      "output": 94
+    },
+    {
+      "original": 60,
+      "output": 96
+    }
+  ],
+  "explanation_page_mapping": [
+    {
+      "original_pages": [
+        1,
+        2,
+        3
+      ],
+      "output_start": 5,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        4
+      ],
+      "output_start": 7,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        5
+      ],
+      "output_start": 9,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        6
+      ],
+      "output_start": 11,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        7
+      ],
+      "output_start": 13,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        8
+      ],
+      "output_start": 15,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        9
+      ],
+      "output_start": 17,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        10,
+        11
+      ],
+      "output_start": 20,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        12,
+        13
+      ],
+      "output_start": 23,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        14,
+        15
+      ],
+      "output_start": 26,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        16,
+        17,
+        18
+      ],
+      "output_start": 30,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        19,
+        20,
+        21
+      ],
+      "output_start": 34,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        22,
+        23,
+        24
+      ],
+      "output_start": 38,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        25,
+        26
+      ],
+      "output_start": 41,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        27,
+        28
+      ],
+      "output_start": 44,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        29,
+        30
+      ],
+      "output_start": 47,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        31
+      ],
+      "output_start": 49,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        32,
+        33,
+        34
+      ],
+      "output_start": 53,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        35
+      ],
+      "output_start": 55,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        36,
+        37
+      ],
+      "output_start": 58,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        38,
+        39
+      ],
+      "output_start": 61,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        40
+      ],
+      "output_start": 63,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        41,
+        42
+      ],
+      "output_start": 66,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        43
+      ],
+      "output_start": 68,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        44,
+        45
+      ],
+      "output_start": 71,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        46
+      ],
+      "output_start": 73,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        47
+      ],
+      "output_start": 75,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        48,
+        49
+      ],
+      "output_start": 78,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        50
+      ],
+      "output_start": 80,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        51,
+        52,
+        53
+      ],
+      "output_start": 84,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        54
+      ],
+      "output_start": 86,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        55
+      ],
+      "output_start": 88,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        56
+      ],
+      "output_start": 90,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        57,
+        58
+      ],
+      "output_start": 93,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        59
+      ],
+      "output_start": 95,
+      "output_count": 1
+    },
+    {
+      "original_pages": [
+        60
+      ],
+      "output_start": 97,
+      "output_count": 1
+    }
+  ],
+  "render_check_scale": 0.5,
+  "validation": "PASS: original bytes, page geometry, content streams, extracted text, rendered pixels, explanation text",
+  "renderer": "PyMuPDF 1.28.2"
+}

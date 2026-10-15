@@ -1,0 +1,182 @@
+{
+  "lecture": 12,
+  "worker": "d",
+  "files": [
+    "lectures/lecture_12.py"
+  ],
+  "format": "Python original with adjacent Chinese comments",
+  "original_lines": 394,
+  "annotated_lines": 671,
+  "added_lines": 277,
+  "added_cjk_characters": 7712,
+  "sha256": "430b08c8ecf043736b1973201a7401ed45139121a7f00ab97cde118e6fccaa5a",
+  "coverage": {
+    "what_is_good": "construct to metric, target distribution, cost and preference limits",
+    "perplexity": "chain rule, NLL/PPL, tokenizer/corpus/context dependence, BPB, weighted aggregation, entropy and conditional-PPL corrections",
+    "exam_benchmarks": "MMLU/Pro/GPQA/HLE protocols, macro/micro, binomial uncertainty, paired comparison and selection bias",
+    "chat_benchmarks": "Arena/Elo, preference versus correctness, length control, rubric and judge bias",
+    "agentic_benchmarks": "SWE/Terminal/Cy/MLE, scaffold/environment/verification, budgets and pass@k",
+    "pure_reasoning_benchmarks": "ARC prior knowledge and version boundaries, inference budget",
+    "safety_benchmarks": "threat model, attack success denominator, overrefusal and dual use",
+    "realism": "construct versus ecological validity, population/workflow coverage, GDPval/MedHELM/Clio limitations",
+    "validity": "source/instance contamination, exchangeability conditions, fresh/private evals, dataset and verifier audit",
+    "how_to_think_about_evaluation": "methods versus systems, reproducible protocol, answered self checks"
+  },
+  "sources_used": [
+    {
+      "url": "https://cs336.stanford.edu/",
+      "kind": "official course, verified Spring 2026"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/stanford-cs336/lectures/main/lecture_12.py",
+      "kind": "official source; HTTP200, byte-identical before edits"
+    },
+    {
+      "path": "/data/zc/cs336-study-control-20261015/sources/lecture_12.srt",
+      "url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/012/captions.source.srt",
+      "kind": "cached third-party subtitles, not teacher-reviewed"
+    },
+    {
+      "url": "https://huggingface.co/docs/transformers/en/perplexity",
+      "kind": "official definition and evaluation conditions"
+    },
+    {
+      "url": "https://arxiv.org/abs/2403.04132",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2404.04475",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.17623",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2502.03461",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2510.04374",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2505.23802",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.01574",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2311.12022",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2501.14249",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.06770",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.11868",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2408.08926",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2410.07095",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2402.04249",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2407.17436",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2412.13678",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2507.02825",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arxiv.org/abs/2406.04770",
+      "kind": "primary paper; actual HTTP/web verification by main or concept reviewer"
+    },
+    {
+      "url": "https://arcprize.org/arc-agi",
+      "kind": "official ARC description"
+    },
+    {
+      "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm",
+      "kind": "reviewer verified statistical interval reference"
+    }
+  ],
+  "subtitle_ranges": [
+    "00:09:46–00:11:36",
+    "00:12:38–00:13:06",
+    "00:26:26–00:27:19",
+    "00:26:55–00:27:19",
+    "00:37:15–00:37:42",
+    "00:38:21–00:41:17",
+    "01:05:23–01:05:58",
+    "01:06:37–01:07:34",
+    "01:07:39–01:08:43",
+    "01:09:44–01:10:27",
+    "01:10:41–01:11:13",
+    "01:15:08–01:15:41",
+    "01:16:41–01:17:26"
+  ],
+  "subagent_roles_and_findings": [
+    {
+      "agent": "/root/lecture12_concept_review",
+      "role": "concept and primary-source checker",
+      "findings": [
+        "Correct entropy/PPL and inverse conditional probability formulas via added comments",
+        "Exchangeability is a statistical null with assumptions, not identical likelihood for each shuffle",
+        "MedHELM 121 denotes task taxonomy, not 121 test questions",
+        "Separate construct and ecological validity; preference bias and inference budgets"
+      ]
+    },
+    {
+      "agent": "/root/lecture12_concept_review",
+      "role": "single final-draft reviewer, reused after quota instruction",
+      "findings": [
+        "One required correction: differing distributions need not have unequal expectations; changed to cannot guarantee equality",
+        "Remaining checked concepts and major themes passed; no obvious numerical errors found"
+      ],
+      "resolution": "Required correction applied by main; static validator rerun passed"
+    }
+  ],
+  "validation": {
+    "command": "python3 /data/zc/cs336-study-integration/lectures/selfstudy/validate_python.py --root \"$PWD\" --lecture 12",
+    "baseline": "d59bbebb257c01b090e40bf60e2c0f960df67d05",
+    "syntax": "PASS",
+    "ast": "IDENTICAL",
+    "executable_tokens": "IDENTICAL",
+    "original_lines_in_order": "PASS",
+    "diff_check": "PASS",
+    "numerical_examples": "CPU checked PPL units/weighted aggregation, binomial SE, paired SE/CI and Elo",
+    "images_inspected": [
+      "images/gpt2-perplexity.png",
+      "images/contamination-exchangeability.png"
+    ],
+    "lecture15_16_existing_deliverables": "Annotated PDFs and JSON source SHA256 unchanged"
+  },
+  "limitations": [
+    "No edtrace page render or full lecture runtime executed; comments are for direct source reading",
+    "No GPU benchmarks or live model evaluations executed",
+    "Rankings remain course snapshots; third-party subtitles may contain transcription errors",
+    "Coordinator integration and final rendering remain to be checked"
+  ],
+  "quota_policy": "Read QUOTA_POLICY.txt; reused earlier research and same subagent, one final review only; no new research after user quota instruction"
+}

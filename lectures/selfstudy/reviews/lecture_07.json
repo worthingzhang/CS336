@@ -1,0 +1,92 @@
+{
+  "lecture": 7,
+  "worker": "b",
+  "files": [
+    "lectures/lecture_07.py"
+  ],
+  "coverage": [
+    "先修、学习目标、跨GPU硬件层级与延迟/带宽模型",
+    "broadcast/scatter/gather/reduce/all-gather/reduce-scatter/all-reduce/all-to-all每rank形状与数值",
+    "真实通信调用、原地写入、同步与warmup、trace禁用通信边界",
+    "sent_bytes全网发送/每卡发送接收/收发合计；NCCL algbw与busbw；GiB/s及原稿近似式疑点",
+    "DP实际mean loss及AVG梯度推导、不等batch加权、AdamW状态、未清零边界",
+    "TP列分片形状、GELU分块、all-gather前向、SUM反向链式法则及reduce-scatter伴随、重复loss缩放",
+    "PP阶段/微批形状、send/recv、理想空泡模型、反向边界及微批损失缩放",
+    "初始化重复与输出尺度、进程启动/设备/端口约束、六项带答案自测"
+  ],
+  "sources_used": [
+    {
+      "url": "https://docs.pytorch.org/docs/2.14/distributed.html",
+      "type": "official documentation",
+      "verification": "本会话web访问"
+    },
+    {
+      "url": "https://github.com/NVIDIA/nccl-tests/blob/master/doc/PERFORMANCE.md",
+      "type": "official documentation",
+      "verification": "主会话与subagent实际访问；结合代码独立推导"
+    },
+    {
+      "url": "https://docs.nvidia.com/cuda/gpudirect-rdma/",
+      "type": "official documentation",
+      "verification": "本会话web访问"
+    },
+    {
+      "url": "https://www.nvidia.com/en-us/data-center/gb200-nvl72/",
+      "type": "official specifications",
+      "verification": "本会话web访问"
+    },
+    {
+      "path": "lectures/lecture_07.py",
+      "type": "Spring 2026 original source",
+      "verification": "主会话完整阅读；图像DP/TP/PP实际查看"
+    },
+    {
+      "path": "sources/lecture_07.srt",
+      "url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/007/captions.source.srt",
+      "type": "third-party cached public video subtitles; not teacher-reviewed",
+      "verification": "本会话读取控制目录缓存"
+    }
+  ],
+  "subtitle_ranges": [
+    "00:48:30–00:53:11",
+    "00:58:23–01:00:43",
+    "01:07:21–01:08:54",
+    "01:10:32–01:13:32"
+  ],
+  "subagent_roles_and_findings": [
+    {
+      "agent": "/root/lecture07_audit",
+      "role": "资料/概念核对员",
+      "actual_work": "已实际调用并收到核对意见",
+      "finding": "确认all_reduce原稿因子2的send+receive解释不符合最终busbw口径：sent_bytes应理解为标准模型全网发送量，因子2来自reduce-scatter与all-gather阶段；官方NCCL PERFORMANCE.md已访问。主会话采纳。"
+    },
+    {
+      "role": "成稿审阅",
+      "actual_work": "由主会话完成一次完整diff检查",
+      "reason": "用户后续QUOTA_POLICY要求不唤醒此前high强度审阅会话、不新增多轮独立复核；复用现有研究。"
+    }
+  ],
+  "validation": {
+    "lecture": 7,
+    "file": "lectures/lecture_07.py",
+    "baseline": "d59bbebb257c01b090e40bf60e2c0f960df67d05",
+    "original_lines": 619,
+    "annotated_lines": 855,
+    "added_lines": 236,
+    "added_cjk_characters": 5192,
+    "syntax": "PASS",
+    "ast": "IDENTICAL",
+    "executable_tokens": "IDENTICAL",
+    "original_lines_in_order": "PASS",
+    "diff_check": "PASS",
+    "runtime": "Not covered by this static check"
+  },
+  "other_lectures_preservation": "对第5、8讲已有8个相关文件进行前后SHA256比较，全部相同；其他讲未编辑。",
+  "limitations": [
+    "仅中文#注释；未运行GPU或多进程benchmark。",
+    "未执行额外证明或数值测试，按用户额度策略仅做一次成稿检查及规定静态验证。",
+    "未验证edtrace页面渲染，中文注释供源码阅读。",
+    "原稿疑点通过相邻注释说明，未改英文或代码。",
+    "待协调者最终集成验收；未提交commit。"
+  ]
+}

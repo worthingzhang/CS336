@@ -1,0 +1,112 @@
+{
+  "lecture": 6,
+  "worker": "a",
+  "files": [
+    "lectures/lecture_06.py"
+  ],
+  "coverage": [
+    "衔接第5讲roofline、算术强度、tiling与在线softmax",
+    "program/CTA/warp及逻辑槽位和物理线程区别",
+    "占用率手算、bank conflict、coalescing及wave尾部",
+    "CUDA异步、warmup、事件计时毫秒口径、首次编译与稳态",
+    "GeLU融合、指针、mask与极端输入溢出",
+    "softmax稳定推导、归约形状、-inf与stride限制、原读量疑点",
+    "row sum分块累加、零填充与在线softmax状态联系",
+    "matmul广播指针、BM/BK/BN形状、K循环边界、融合ReLU与精度限制",
+    "具体数字/小矩阵手算及5题含答案自测"
+  ],
+  "sources_used": [
+    {
+      "url": "https://cs336.stanford.edu/",
+      "verification": "主会话HTTP 200；以本地Spring 2026原稿为主体"
+    },
+    {
+      "url": "https://triton-lang.org/main/getting-started/tutorials/01-vector-add.html",
+      "verification": "主会话HTTP 200；subagent官方文档核对"
+    },
+    {
+      "url": "https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html",
+      "verification": "主会话HTTP 200；subagent核对读量与归约"
+    },
+    {
+      "url": "https://triton-lang.org/main/getting-started/tutorials/03-matrix-multiplication.html",
+      "verification": "主会话HTTP 200；subagent形状与累加核对"
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/stable/notes/cuda.html",
+      "verification": "subagent报告实际web打开官方CUDA文档"
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/stable/generated/torch.cuda.Event.html",
+      "verification": "主会话HTTP 403；subagent报告通过web打开核对"
+    },
+    {
+      "url": "https://triton-lang.org/main/python-api/generated/triton.language.load.html",
+      "verification": "subagent报告实际web打开核对"
+    },
+    {
+      "url": "https://triton-lang.org/main/python-api/generated/triton.language.dot.html",
+      "verification": "subagent报告实际web打开核对"
+    }
+  ],
+  "subtitle_ranges": [
+    {
+      "source": "sources/lecture_06.srt",
+      "reliability": "第三方公开录像字幕，非教师审校稿",
+      "ranges": [
+        "00:23:53–00:25:35",
+        "00:47:43–00:50:30",
+        "01:01:28–01:04:25",
+        "01:08:42–01:10:59"
+      ]
+    }
+  ],
+  "subagent_roles_and_findings": [
+    {
+      "agent": "/root/lecture6_concept_review",
+      "role": "资料/概念核对员",
+      "findings": [
+        "BLOCK_SIZE不是物理线程数",
+        "occupancy英文64线程与代码128不符",
+        "naive softmax读量应为5MN+2M",
+        "indices_k原英文行列描述颠倒",
+        "matmul acc不能断言驻留shared memory"
+      ],
+      "incorporated": true
+    },
+    {
+      "role": "成稿审阅",
+      "performed_by": "主Codex",
+      "reason": "用户最新额度策略要求不再唤醒此前high强度审阅会话；取消独立成稿subagent复核",
+      "findings": [
+        "阅读全文diff；修正忽略softmax读量M项的适用条件为N足够大",
+        "收紧稳定softmax前提为最大值有限且无NaN"
+      ]
+    }
+  ],
+  "validation": {
+    "static": {
+      "lecture": 6,
+      "file": "lectures/lecture_06.py",
+      "baseline": "d59bbebb257c01b090e40bf60e2c0f960df67d05",
+      "original_lines": 745,
+      "annotated_lines": 994,
+      "added_lines": 249,
+      "added_cjk_characters": 4681,
+      "syntax": "PASS",
+      "ast": "IDENTICAL",
+      "executable_tokens": "IDENTICAL",
+      "original_lines_in_order": "PASS",
+      "diff_check": "PASS",
+      "runtime": "Not covered by this static check"
+    },
+    "cpu_hand_calculations": "PASS：2x3乘3x2矩阵、N=10/BLOCK=4分块和、18.75%occupancy、16FLOP/byte；纯Python未导入GPU框架",
+    "main_manuscript_review": "完成一次整稿diff检查，修正后重跑规定静态验证"
+  },
+  "limitations": [
+    "未运行GPU kernel/昂贵基准，未验证运行时性能或所有数值边界",
+    "未执行edtrace渲染；注释在Python源码中，不声称网页显示验证通过",
+    "按用户额度策略未进行独立subagent成稿复审",
+    "未修改原实现疑点，仅添加相邻解释；其他讲文件保持不动"
+  ]
+}

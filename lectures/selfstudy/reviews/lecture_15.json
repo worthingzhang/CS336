@@ -1,0 +1,715 @@
+{
+  "lecture": 15,
+  "worker": "d",
+  "status": "done",
+  "completed_utc": "2026-10-15T09:28:21.722472+00:00",
+  "files": [
+    {
+      "path": "/data/zc/cs336-study-d/lectures/lecture_15_annotated.pdf",
+      "sha256": "2bc027f6c1e7c28e896fa423977e3e0cbe983f755566458479c8d08fcb1134dc",
+      "bytes": 8459028
+    },
+    {
+      "path": "/data/zc/cs336-study-d/lectures/selfstudy/lecture_15.json",
+      "sha256": "6951a65516bb929ca2ce5816df0423a8e1ecce1789926eaed8abd80ce3bbe45b",
+      "bytes": 70765
+    },
+    {
+      "path": "/data/zc/cs336-study-d/lectures/selfstudy/lecture_15.build.json",
+      "sha256": "be2d7ff1d8b9198ec0b87e61a6f1daefde8caaaef17c1af93f87eba4ddb98d48",
+      "bytes": 8183
+    }
+  ],
+  "coverage": {
+    "original_pages": 65,
+    "output_pages": 105,
+    "added_pages_including_guide_self_checks_references": 40,
+    "sections": 35,
+    "blocks": 104,
+    "explanatory_text_characters": 16732,
+    "self_checks_with_answers": 14,
+    "page_coverage": "1..65 exactly once, ordered, no gap",
+    "section_map": [
+      {
+        "pages": [
+          1,
+          2,
+          3
+        ],
+        "title": "为什么预训练之后还需要训练"
+      },
+      {
+        "pages": [
+          4,
+          5,
+          6
+        ],
+        "title": "后训练的问题分解与证据边界"
+      },
+      {
+        "pages": [
+          7,
+          8,
+          9
+        ],
+        "title": "SFT数据如何从任务集走向交互轨迹"
+      },
+      {
+        "pages": [
+          10
+        ],
+        "title": "FLAN：把旧任务转换成指令的收益与局限"
+      },
+      {
+        "pages": [
+          11,
+          12
+        ],
+        "title": "Alpaca与OpenAssistant：聊天风格、详细知识和质量"
+      },
+      {
+        "pages": [
+          13,
+          14,
+          15
+        ],
+        "title": "工具调用也是被监督的行为"
+      },
+      {
+        "pages": [
+          16,
+          17,
+          18
+        ],
+        "title": "风格偏好与任务能力必须分开测量"
+      },
+      {
+        "pages": [
+          19,
+          20,
+          21
+        ],
+        "title": "为什么事实正确的SFT数据仍可能诱发幻觉"
+      },
+      {
+        "pages": [
+          22,
+          23
+        ],
+        "title": "安全调优不是把所有问题都拒绝"
+      },
+      {
+        "pages": [
+          24,
+          25
+        ],
+        "title": "从真实交互中挖掘安全与非顺从场景"
+      },
+      {
+        "pages": [
+          26,
+          27
+        ],
+        "title": "少量样本可以改变行为，但不覆盖长尾"
+      },
+      {
+        "pages": [
+          28
+        ],
+        "title": "SFT实际优化了什么"
+      },
+      {
+        "pages": [
+          29,
+          30
+        ],
+        "title": "Midtraining：数据混合与学习率阶段共同变化"
+      },
+      {
+        "pages": [
+          31,
+          32,
+          33
+        ],
+        "title": "从模仿分布转向优化奖励"
+      },
+      {
+        "pages": [
+          34,
+          35,
+          36
+        ],
+        "title": "偏好数据的一条记录究竟是什么"
+      },
+      {
+        "pages": [
+          37,
+          38
+        ],
+        "title": "标注规范如何把抽象偏好变成操作"
+      },
+      {
+        "pages": [
+          39,
+          40
+        ],
+        "title": "谁在标注：抽样人群、专业性和劳动成本"
+      },
+      {
+        "pages": [
+          41,
+          42
+        ],
+        "title": "众包质量与伦理会进入数据生成机制"
+      },
+      {
+        "pages": [
+          43,
+          44
+        ],
+        "title": "人群偏好与错误识别偏差"
+      },
+      {
+        "pages": [
+          45,
+          46
+        ],
+        "title": "模型作为评判者：便宜可扩展不等于没有偏差"
+      },
+      {
+        "pages": [
+          47
+        ],
+        "title": "Constitutional AI：生成、批评、修订与比较"
+      },
+      {
+        "pages": [
+          48
+        ],
+        "title": "长度为什么会成为奖励捷径"
+      },
+      {
+        "pages": [
+          49,
+          50
+        ],
+        "title": "算法入口：把数据、目标和求解器分开"
+      },
+      {
+        "pages": [
+          51,
+          52
+        ],
+        "title": "奖励模型、KL正则与预训练混合项"
+      },
+      {
+        "pages": [
+          53
+        ],
+        "title": "从策略梯度到PPO：补齐中间台阶"
+      },
+      {
+        "pages": [
+          54,
+          55
+        ],
+        "title": "为何不只用赢家做SFT：走向DPO"
+      },
+      {
+        "pages": [
+          56
+        ],
+        "title": "DPO第一步：解出KL约束下的理想策略"
+      },
+      {
+        "pages": [
+          57
+        ],
+        "title": "DPO第二步：把隐式奖励放入偏好似然"
+      },
+      {
+        "pages": [
+          58
+        ],
+        "title": "DPO第三步：梯度为何自动关注难配对"
+      },
+      {
+        "pages": [
+          59
+        ],
+        "title": "离线DPO内循环也可以放进迭代外循环"
+      },
+      {
+        "pages": [
+          60
+        ],
+        "title": "SimPO与长度归一化DPO：看清改了哪一项"
+      },
+      {
+        "pages": [
+          61
+        ],
+        "title": "PPO与DPO比较为什么常依赖实验设置"
+      },
+      {
+        "pages": [
+          62,
+          63
+        ],
+        "title": "奖励过度优化：代理分数上升，真实目标反而下降"
+      },
+      {
+        "pages": [
+          64
+        ],
+        "title": "低熵、模式坍缩与失准是三个不同概念"
+      },
+      {
+        "pages": [
+          65
+        ],
+        "title": "把整讲串成一条可以复述的因果链"
+      }
+    ]
+  },
+  "sources_used": {
+    "references": [
+      {
+        "id": "slides",
+        "title": "Stanford CS336 Spring 2026 Lecture 15：官方原课件，主依据",
+        "url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_15.pdf"
+      },
+      {
+        "id": "course",
+        "title": "Stanford CS336 Spring 2026：官方课程与讲次索引",
+        "url": "https://cs336.stanford.edu/"
+      },
+      {
+        "id": "captions",
+        "title": "Lecture 15公开录像字幕第三方缓存：仅作核验转述，非审校逐字稿",
+        "url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/015/captions.source.srt"
+      },
+      {
+        "id": "instructgpt",
+        "title": "Ouyang et al. 2022：Training language models to follow instructions with human feedback，原论文",
+        "url": "https://arxiv.org/abs/2203.02155"
+      },
+      {
+        "id": "stiennon",
+        "title": "Stiennon et al. 2020：Learning to summarize from human feedback，原论文",
+        "url": "https://arxiv.org/abs/2009.01325"
+      },
+      {
+        "id": "camels",
+        "title": "Wang et al. 2023：How Far Can Camels Go?，指令数据比较原论文",
+        "url": "https://arxiv.org/abs/2306.04751"
+      },
+      {
+        "id": "alpacafarm",
+        "title": "Dubois et al. 2023：AlpacaFarm，偏好模拟与过优化原论文",
+        "url": "https://arxiv.org/abs/2305.14387"
+      },
+      {
+        "id": "gekhman",
+        "title": "Gekhman et al. 2024：Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?，原论文；校正原页年份",
+        "url": "https://aclanthology.org/2024.emnlp-main.444/"
+      },
+      {
+        "id": "safetyfew",
+        "title": "Bianchi et al. 2023：Safety-Tuned LLaMAs，少量安全示范原论文",
+        "url": "https://arxiv.org/abs/2309.07875"
+      },
+      {
+        "id": "minicpm",
+        "title": "Hu et al. 2024：MiniCPM，分阶段训练原论文",
+        "url": "https://arxiv.org/abs/2404.06395"
+      },
+      {
+        "id": "tulu3",
+        "title": "Lambert et al.：Tülu 3，公开后训练配方与长度归一化DPO原论文",
+        "url": "https://arxiv.org/html/2411.15124v4"
+      },
+      {
+        "id": "opinions",
+        "title": "Santurkar et al. 2023：Whose Opinions Do Language Models Reflect?，原论文",
+        "url": "https://arxiv.org/abs/2303.17548"
+      },
+      {
+        "id": "humanfeedback",
+        "title": "Hosking et al.：Human Feedback is not Gold Standard，ICLR 2024原论文",
+        "url": "https://arxiv.org/abs/2309.16349"
+      },
+      {
+        "id": "cai",
+        "title": "Bai et al. 2022：Constitutional AI: Harmlessness from AI Feedback，原论文",
+        "url": "https://arxiv.org/abs/2212.08073"
+      },
+      {
+        "id": "ppo",
+        "title": "Schulman et al. 2017：Proximal Policy Optimization Algorithms，原论文",
+        "url": "https://arxiv.org/abs/1707.06347"
+      },
+      {
+        "id": "dpo",
+        "title": "Rafailov et al.：Direct Preference Optimization，原论文§4及附录A",
+        "url": "https://arxiv.org/html/2305.18290v3"
+      },
+      {
+        "id": "simpo",
+        "title": "Meng et al.：SimPO，原论文§2.2，含长度归一化与目标间隔",
+        "url": "https://arxiv.org/html/2405.14734v3"
+      }
+    ],
+    "live_http_verification": [
+      {
+        "id": "slides",
+        "url": "https://github.com/stanford-cs336/lectures/blob/main/lecture_15.pdf",
+        "status": 200,
+        "bytes": 209497,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "course",
+        "url": "https://cs336.stanford.edu/",
+        "status": 200,
+        "bytes": 33995,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "captions",
+        "url": "https://jingzechen.github.io/assets/courses/stanford-cs336-s26/lectures/015/captions.source.srt",
+        "status": 200,
+        "bytes": 145089,
+        "content_type": "application/x-subrip"
+      },
+      {
+        "id": "instructgpt",
+        "url": "https://arxiv.org/abs/2203.02155",
+        "status": 200,
+        "bytes": 44863,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "stiennon",
+        "url": "https://arxiv.org/abs/2009.01325",
+        "status": 200,
+        "bytes": 44399,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "camels",
+        "url": "https://arxiv.org/abs/2306.04751",
+        "status": 200,
+        "bytes": 45088,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "alpacafarm",
+        "url": "https://arxiv.org/abs/2305.14387",
+        "status": 200,
+        "bytes": 44909,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "gekhman",
+        "url": "https://aclanthology.org/2024.emnlp-main.444/",
+        "status": 200,
+        "bytes": 44582,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "safetyfew",
+        "url": "https://arxiv.org/abs/2309.07875",
+        "status": 200,
+        "bytes": 41764,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "minicpm",
+        "url": "https://arxiv.org/abs/2404.06395",
+        "status": 200,
+        "bytes": 46581,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "tulu3",
+        "url": "https://arxiv.org/html/2411.15124v4",
+        "status": 200,
+        "bytes": 1603914,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "opinions",
+        "url": "https://arxiv.org/abs/2303.17548",
+        "status": 200,
+        "bytes": 41751,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "humanfeedback",
+        "url": "https://arxiv.org/abs/2309.16349",
+        "status": 200,
+        "bytes": 41451,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "cai",
+        "url": "https://arxiv.org/abs/2212.08073",
+        "status": 200,
+        "bytes": 49681,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "ppo",
+        "url": "https://arxiv.org/abs/1707.06347",
+        "status": 200,
+        "bytes": 42489,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "dpo",
+        "url": "https://arxiv.org/html/2305.18290v3",
+        "status": 200,
+        "bytes": 411092,
+        "content_type": "text/html; charset=utf-8"
+      },
+      {
+        "id": "simpo",
+        "url": "https://arxiv.org/html/2405.14734v3",
+        "status": 200,
+        "bytes": 612983,
+        "content_type": "text/html; charset=utf-8"
+      }
+    ],
+    "priority": "Original Spring 2026 slides and corresponding lecture subtitles, then original papers. No generated study notes used as classroom evidence."
+  },
+  "subtitle_ranges": [
+    {
+      "original_pages": [
+        4,
+        5,
+        6
+      ],
+      "range": "00:05:53–00:06:47"
+    },
+    {
+      "original_pages": [
+        10
+      ],
+      "range": "00:11:24–00:14:24"
+    },
+    {
+      "original_pages": [
+        13,
+        14,
+        15
+      ],
+      "range": "00:16:50–00:18:52"
+    },
+    {
+      "original_pages": [
+        16,
+        17,
+        18
+      ],
+      "range": "00:19:39–00:21:58"
+    },
+    {
+      "original_pages": [
+        19,
+        20,
+        21
+      ],
+      "range": "00:26:27–00:28:07"
+    },
+    {
+      "original_pages": [
+        24,
+        25
+      ],
+      "range": "00:30:29–00:32:13"
+    },
+    {
+      "original_pages": [
+        26,
+        27
+      ],
+      "range": "00:32:20–00:34:57"
+    },
+    {
+      "original_pages": [
+        29,
+        30
+      ],
+      "range": "00:36:09–00:40:50"
+    },
+    {
+      "original_pages": [
+        29,
+        30
+      ],
+      "range": "00:38:32–00:38:46"
+    },
+    {
+      "original_pages": [
+        31,
+        32,
+        33
+      ],
+      "range": "00:42:23–00:45:59"
+    },
+    {
+      "original_pages": [
+        37,
+        38
+      ],
+      "range": "00:47:30–00:49:09"
+    },
+    {
+      "original_pages": [
+        41,
+        42
+      ],
+      "range": "00:51:24–00:52:52"
+    },
+    {
+      "original_pages": [
+        48
+      ],
+      "range": "01:04:30–01:05:23"
+    },
+    {
+      "original_pages": [
+        53
+      ],
+      "range": "01:07:14–01:08:59"
+    },
+    {
+      "original_pages": [
+        56
+      ],
+      "range": "01:11:14–01:12:48"
+    },
+    {
+      "original_pages": [
+        58
+      ],
+      "range": "01:13:24–01:14:16"
+    },
+    {
+      "original_pages": [
+        59
+      ],
+      "range": "01:14:46–01:15:09"
+    },
+    {
+      "original_pages": [
+        61
+      ],
+      "range": "01:15:38–01:16:33"
+    },
+    {
+      "original_pages": [
+        62,
+        63
+      ],
+      "range": "01:16:39–01:17:28"
+    },
+    {
+      "original_pages": [
+        64
+      ],
+      "range": "01:17:31–01:18:49"
+    }
+  ],
+  "subagent_roles_and_findings": [
+    {
+      "agent": "/root/lecture15_research",
+      "role": "资料与概念核对员",
+      "completed": true,
+      "findings": [
+        "实际核验DPO、SimPO、Tülu 3、PPO、InstructGPT、Stiennon及Gekhman原论文，核对课堂字幕",
+        "区分πref与πold；PPO clip不是硬概率约束",
+        "DPO非参数支持集条件、Z抵消、梯度权重和有限模型限制",
+        "SimPO含γ软间隔；长度归一化DPO仍保留reference",
+        "原页20 Gekhman 2023应注明论文为2024；原页64不能解读成模型失去概率分布"
+      ]
+    },
+    {
+      "agent": "/root/lecture15_research",
+      "role": "全文成稿审阅员",
+      "completed": true,
+      "scope": "完整35组正文、14道自测、来源索引、相关图表与时间戳；另审查过已删除的临时构建兼容入口",
+      "findings": [
+        "未发现P0/P1阻断问题",
+        "P2：配对权重大应指模型预测不符合标签，已修正并注明噪声可被放大",
+        "P3：γ软间隔与β尺度的关系已明确",
+        "独立核验105页PDF的65对原页Group及0.5倍逐像素一致"
+      ],
+      "main_codex_resolution": "主Codex采纳两处措辞修订，亲自完成全文编辑、最终直接共享构建、数学测试和视觉验收"
+    }
+  ],
+  "validation": {
+    "shared_build_command": "/data/zc/cs336-study-control-20261015/venv/bin/python /data/zc/cs336-study-integration/lectures/selfstudy/build_pdf.py --root /data/zc/cs336-study-d --lecture 15",
+    "shared_build_exit_code": 0,
+    "shared_build_result": "PASS: original bytes, page geometry, content streams, extracted text, rendered pixels, explanation text",
+    "original_sha256": "42a4bc02408a96e0b414f789f32780ae1d8461000f872d93aa38c94fe369e862",
+    "original_bytes_match_git_HEAD": true,
+    "schema_and_coverage": "PASS: required schema, pages 1..65, unique reference ids, all cited ids exist",
+    "independent_checks": {
+      "pages": 105,
+      "original_pages": 65,
+      "new_pages": 40,
+      "independent_original_checks": "65/65 geometry/text/content-stream/full-resolution pixels PASS",
+      "intro_checks_references_text": "PASS",
+      "formula_finite_difference": "PASS",
+      "numeric_examples": "PASS",
+      "outside_text_spans": []
+    },
+    "numerical_checks": [
+      "Alpaca mean 31/5=6.2",
+      "SFT sequence NLL 2.302585093 and token mean 0.7675283643",
+      "Bradley–Terry ln3 -> probability 0.75 and NLL 0.2876820725",
+      "PPO clip sign cases (A,rho)=(2,1.5),(-2,0.5),(-2,1.5)",
+      "KL optimum (0.75,0.25), J=ln2; beta=2 -> 0.6339745962",
+      "DPO ln4 -> probability 0.8, NLL 0.2231435513; weights 0.5/0.2/0.8",
+      "DPO analytic gradient compared to central finite differences, 3-logit softmax, tolerance 1e-9",
+      "H(0.9,0.1)=0.3250829734; length-normalized comparison 2/4 - 1/2 = 0"
+    ],
+    "visual_review": {
+      "original_slides": "主Codex完整读取65页文本并查看全部缩略渲染；放大核验公式、流程图及关键统计图",
+      "final_output_pages_viewed": [
+        1,
+        26,
+        79,
+        82,
+        84,
+        86,
+        92,
+        97,
+        102,
+        103,
+        104,
+        105
+      ],
+      "earlier_output_pages_viewed": [
+        18,
+        30,
+        41,
+        64,
+        77,
+        99
+      ],
+      "result": "中文与数学符号可读；未见裁切、文字越界、公式缺失。自测和参考资料跨页连续，书签原页映射正确。"
+    },
+    "git_diff_check": "PASS; only lecture15 deliverables added by worker, no original lecture edits or commits",
+    "build_issue_resolution": "首次共享构建因PyMuPDF insert_pdf遗漏page Group而失败；主Codex诊断并在reviews记录。协调者更新共享构建器并投递BUILD_FIX.txt后，已删除本地临时兼容入口，使用规定共享命令直接重建成功；严格像素断言未放宽；worker没有修改共享工具。"
+  },
+  "limitations": [
+    "字幕为第三方转写，课堂补充是经核对的转述而非逐字引语；未逐帧听完整视频。",
+    "保留原页所有内容，中文注明均值、论文年份、Llama版本和薪酬统计口径等问题；不将历史实验泛化为当前所有模型。",
+    "数学例子与渲染已验证，未重跑论文大规模模型训练或宣称复现论文性能。",
+    "待协调者做最终集成与教学内容抽查；当前无已知阻断项。"
+  ],
+  "coordination_note": "lectures/selfstudy/BUILD_FIX.txt是协调者通知，保留未动，不属于第15讲交付成稿。"
+}
